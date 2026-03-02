@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generational Wellness - Humana Care</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --humana-green: #5C9A1B;
+            --humana-dark-blue: #005B68;
+            --humana-dark-green: #78BE20;
+            --humana-light-green: rgba(92, 154, 27, 0.1);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .text-humana-blue { color: var(--humana-dark-blue); }
+        .text-humana-green { color: var(--humana-green); }
+        .bg-humana-green { background-color: var(--humana-green); }
+        .bg-humana-blue { background-color: var(--humana-dark-blue); }
+        .bg-humana-dark-green { background-color: var(--humana-dark-green); }
+        .bg-humana-light-green { background-color: var(--humana-light-green); }
+
+        .btn-humana {
+            background-color: var(--humana-green);
+            color: white;
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-humana:hover {
+            background-color: var(--humana-dark-green);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .logo-box {
+            width: 32px;
+            height: 32px;
+            background-color: var(--humana-green);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #fff 0%, #f8fdf4 100%);
+            position: relative;
+        }
+
+        .stats-card {
+            bottom: -20px;
+            left: -20px;
+            max-width: 280px;
+            z-index: 10;
+        }
+
+        .icon-circle {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .icon-box {
+            width: 56px;
+            height: 56px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .activity-card {
+            transition: all 0.3s ease;
+        }
+
+        .activity-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 1rem 3rem rgba(0,0,0,0.1) !important;
+        }
+
+        .tip-number {
+            width: 40px;
+            height: 40px;
+            background-color: var(--humana-light-green);
+            color: var(--humana-green);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .cta-banner {
+            background-color: var(--humana-dark-blue);
+            background-image: radial-gradient(circle at 10% 20%, rgba(255,255,255,0.05) 0%, transparent 50%),
+                              radial-gradient(circle at 90% 80%, rgba(92,154,27,0.2) 0%, transparent 50%);
+        }
+
+        .hover-green:hover {
+            color: var(--humana-green) !important;
+        }
+
+        .rounded-5 { border-radius: 2rem !important; }
+        .rounded-4 { border-radius: 1.5rem !important; }
+
+        @media (max-width: 991px) {
+            .display-3 { font-size: 3rem; }
+            .stats-card { position: static !important; margin-top: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <div class="logo-box me-2">
+                    <i data-lucide="heart" class="text-white"></i>
+                </div>
+                <span class="fw-bold text-humana-blue">Generational Wellness</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#activities">Activities</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tips">Wellness Tips</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#community">Community</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-humana rounded-pill px-4" href="#">Get Started</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section py-5 overflow-hidden">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 animate__animated animate__fadeInLeft">
+                    <span class="badge bg-humana-light-green text-humana-green rounded-pill px-3 py-2 mb-4">Healthy Habits for Every Generation</span>
+                    <h1 class="display-3 fw-bold text-humana-blue mb-4">Caring for those who <span class="text-humana-green">cared for us.</span></h1>
+                    <p class="lead text-muted mb-5">Empowering young caregivers and families to support the physical, mental, and social wellbeing of older loved ones through intergenerational connection.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#activities" class="btn btn-humana btn-lg rounded-pill px-5 shadow-lg">Explore Activities</a>
+                        <a href="#" class="btn btn-outline-secondary btn-lg rounded-pill px-5">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0 animate__animated animate__zoomIn">
+                    <div class="position-relative">
+                        <img src="https://images.unsplash.com/photo-1581579438747-1dc8d17bbce4?auto=format&fit=crop&q=80&w=1000" alt="Grandparent and grandchild" class="img-fluid rounded-5 shadow-lg">
+                        <div class="stats-card bg-white p-4 rounded-4 shadow-xl position-absolute animate__animated animate__fadeInUp animate__delay-1s">
+                            <div class="d-flex align-items-center gap-3 mb-2">
+                                <div class="icon-circle bg-humana-light-green">
+                                    <i data-lucide="users" class="text-humana-green"></i>
+                                </div>
+                                <span class="fw-bold text-dark">Connection Matters</span>
+                            </div>
+                            <p class="small text-muted mb-0">92% of elders feel happier after spending time with younger generations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Activities Section -->
+    <section id="activities" class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-humana-blue">Activities to Do Together</h2>
+                <p class="lead text-muted">Simple ways to bridge the generational gap and create lasting memories.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4 activity-card">
+                        <div class="icon-box bg-humana-green mb-4">
+                            <i data-lucide="footprints" class="text-white"></i>
+                        </div>
+                        <h3 class="h4 fw-bold text-humana-blue">Wellness Walks</h3>
+                        <p class="text-muted">Take a gentle stroll in a local park. It's great for physical health and provides a perfect setting for conversation.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4 activity-card">
+                        <div class="icon-box bg-humana-blue mb-4">
+                            <i data-lucide="utensils" class="text-white"></i>
+                        </div>
+                        <h3 class="h4 fw-bold text-humana-blue">Heritage Cooking</h3>
+                        <p class="text-muted">Learn a family recipe. It preserves culture and ensures your loved one is eating nutritious meals.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4 activity-card">
+                        <div class="icon-box bg-humana-dark-green mb-4">
+                            <i data-lucide="smartphone" class="text-white"></i>
+                        </div>
+                        <h3 class="h4 fw-bold text-humana-blue">Tech Support</h3>
+                        <p class="text-muted">Help them navigate video calls or health apps. It reduces isolation and keeps them connected.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section id="tips" class="py-5">
+        <div class="container py-5">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=1000" alt="Caregiver" class="img-fluid rounded-5 shadow-lg">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold text-humana-blue mb-5">Practical Tips for Caregivers</h2>
+                    <div class="d-flex gap-4 mb-4">
+                        <div class="tip-number">1</div>
+                        <div>
+                            <h4 class="fw-bold text-dark">Empathy-Based Communication</h4>
+                            <p class="text-muted">Listen more than you speak. Use a calm, respectful tone and maintain eye level when talking.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-4 mb-4">
+                        <div class="tip-number">2</div>
+                        <div>
+                            <h4 class="fw-bold text-dark">Monitor Physical Safety</h4>
+                            <p class="text-muted">Check for trip hazards at home. Ensure they have comfortable, non-slip footwear and adequate lighting.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-4">
+                        <div class="tip-number">3</div>
+                        <div>
+                            <h4 class="fw-bold text-dark">Social Engagement</h4>
+                            <p class="text-muted">Encourage participation in community centers. Social health is just as important as physical health.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="cta-banner p-5 p-lg-5 text-center text-white rounded-5 shadow-lg">
+                <h2 class="display-4 fw-bold mb-4">Ready to make a difference?</h2>
+                <p class="lead mb-5 opacity-75">Join our community of young caregivers and start building healthier habits today.</p>
+                <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+                    <a href="#" class="btn btn-humana btn-lg rounded-pill px-5">Try an Activity This Week</a>
+                    <a href="#" class="btn btn-outline-light btn-lg rounded-pill px-5">Join the Newsletter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light pt-5 pb-4 mt-5 border-top">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="logo-box me-2">
+                            <i data-lucide="heart" class="text-white"></i>
+                        </div>
+                        <span class="fw-bold h4 mb-0 text-humana-blue">Generational Wellness</span>
+                    </div>
+                    <p class="text-muted max-w-400">A digital wellness campaign dedicated to supporting intergenerational health and connection, inspired by Humana's Human Care identity.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="fw-bold mb-4">Quick Links</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted hover-green">About Campaign</a></li>
+                        <li class="mb-2"><a href="#activities" class="text-decoration-none text-muted hover-green">Activities</a></li>
+                        <li class="mb-2"><a href="#tips" class="text-decoration-none text-muted hover-green">Wellness Tips</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="fw-bold mb-4">Contact</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-2">support@genwellness.org</li>
+                        <li class="mb-2">1-800-WELLNESS</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-4 border-top text-center text-muted small">
+                <p>&copy; 2026 Generational Wellness Campaign. Inspired by Humana.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
