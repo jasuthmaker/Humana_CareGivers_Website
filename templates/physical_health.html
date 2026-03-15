@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --humana-green: #5C9A1B;
+            --humana-dark-blue: #005B68;
+            --humana-dark-green: #78BE20;
+            --humana-light-green: rgba(92, 154, 27, 0.1);
+        }
+        body { font-family: 'Inter', sans-serif; color: #333; background: #f8fcf5; }
+        .text-humana-blue { color: var(--humana-dark-blue); }
+        .text-humana-green { color: var(--humana-green); }
+        .bg-humana-light-green { background: var(--humana-light-green); }
+        .btn-humana { background: var(--humana-green); color: #fff; border: 0; }
+        .btn-humana:hover { background: var(--humana-dark-green); color: #fff; }
+        .hero { background: linear-gradient(130deg, #ffffff 0%, #eef8e5 100%); border-bottom: 1px solid #e8ecef; }
+        .tip-card { background: #fff; border-radius: 1rem; border: 1px solid rgba(0,0,0,0.05); height: 100%; }
+        .micro-cta { background: #fff; border-left: 5px solid var(--humana-green); border-radius: .75rem; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-humana-blue" href="/">Generational Wellness</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navMain">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/physical-health">Physical</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/mental-health">Mental</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/social-connection">Social</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/activities">Activities</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero py-5">
+        <div class="container py-4">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-8">
+                    <span class="badge bg-humana-light-green text-humana-green rounded-pill px-3 py-2 mb-3">Physical Wellness for Older Adults</span>
+                    <h1 class="display-5 fw-bold text-humana-blue">Small daily habits can protect strength, balance, and independence.</h1>
+                    <p class="lead text-muted mt-3">Caregivers can support healthy movement, better nutrition, medication routines, and safer homes—without making elders feel controlled or rushed.</p>
+                    <a class="btn btn-humana rounded-pill px-4 mt-2" href="#weekly-action">Try this week’s action</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="tip-card p-4 shadow-sm">
+                        <h3 class="h5 text-humana-blue fw-bold">Move Together</h3>
+                        <p class="text-muted small mb-0">Plan 20–30 minute low-impact activities like neighborhood walks, chair stretches, or gentle dance. Consistency matters more than intensity.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="tip-card p-4 shadow-sm">
+                        <h3 class="h5 text-humana-blue fw-bold">Safer Home Setup</h3>
+                        <p class="text-muted small mb-0">Reduce fall risks: clear walking paths, add night lights, keep commonly used items within reach, and use non-slip mats in bathrooms.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="tip-card p-4 shadow-sm">
+                        <h3 class="h5 text-humana-blue fw-bold">Nutrition Support</h3>
+                        <p class="text-muted small mb-0">Build simple meal plans with protein, colorful vegetables, hydration reminders, and easy-prep snacks to avoid skipped meals.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="tip-card p-4 shadow-sm">
+                        <h3 class="h5 text-humana-blue fw-bold">Care Routine</h3>
+                        <p class="text-muted small mb-0">Use a visible checklist for medications, checkups, and sleep routines. Invite elders to co-create the schedule for shared control.</p>
+                    </div>
+                </div>
+            </div>
+
+            <section id="weekly-action" class="micro-cta p-4 p-lg-5 mt-5 shadow-sm">
+                <h2 class="h3 fw-bold text-humana-blue">Weekly Family Challenge</h2>
+                <p class="text-muted mb-2">Choose one day this week to do a “wellness hour” together: a short walk, healthy meal prep, and a quick home safety check.</p>
+                <p class="mb-0 fw-semibold text-humana-green">Call to action: “Try this activity with your elder this week.”</p>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-white border-top py-4">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2">
+            <span class="text-muted small">&copy; {{ year }} Generational Wellness Campaign</span>
+            <div class="small">
+                <a href="/mental-health" class="text-decoration-none me-3">Mental Health</a>
+                <a href="/social-connection" class="text-decoration-none">Social Connection</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

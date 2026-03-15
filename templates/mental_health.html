@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --humana-green: #5C9A1B;
+            --humana-dark-blue: #005B68;
+            --humana-dark-green: #78BE20;
+            --humana-light-green: rgba(92, 154, 27, 0.1);
+        }
+        body { font-family: 'Inter', sans-serif; color: #333; background: #f7fbff; }
+        .text-humana-blue { color: var(--humana-dark-blue); }
+        .text-humana-green { color: var(--humana-green); }
+        .bg-humana-light-green { background: var(--humana-light-green); }
+        .btn-humana { background: var(--humana-green); color: #fff; border: 0; }
+        .btn-humana:hover { background: var(--humana-dark-green); color: #fff; }
+        .hero { background: linear-gradient(130deg, #ffffff 0%, #eef8f8 100%); border-bottom: 1px solid #e8ecef; }
+        .tip-card { background: #fff; border-radius: 1rem; border: 1px solid rgba(0,0,0,0.05); height: 100%; }
+        .prompt-card { border-radius: .8rem; background: #ffffff; border: 1px solid #dbe8eb; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-humana-blue" href="/">Generational Wellness</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navMain">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/physical-health">Physical</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/mental-health">Mental</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/social-connection">Social</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/activities">Activities</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero py-5">
+        <div class="container py-4">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-8">
+                    <span class="badge bg-humana-light-green text-humana-green rounded-pill px-3 py-2 mb-3">Mental & Emotional Wellness</span>
+                    <h1 class="display-5 fw-bold text-humana-blue">Calm conversations and meaningful routines support emotional health.</h1>
+                    <p class="lead text-muted mt-3">Loneliness, stress, and major life transitions can affect older adults. Caregivers can help by creating structure, listening with empathy, and encouraging connection.</p>
+                    <a class="btn btn-humana rounded-pill px-4 mt-2" href="#conversation-prompts">Use conversation prompts</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="tip-card p-4 shadow-sm">
+                        <h3 class="h5 text-humana-blue fw-bold">Build Gentle Daily Rhythm</h3>
+                        <p class="text-muted mb-0">Keep regular sleep and meal times, include sunlight and movement, and plan one enjoyable moment each day (music, prayer, tea chat, puzzle).</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="tip-card p-4 shadow-sm">
+                        <h3 class="h5 text-humana-blue fw-bold">Notice Mood Changes Early</h3>
+                        <p class="text-muted mb-0">Watch for long-lasting sadness, withdrawal, confusion, or sleep changes. Share concerns respectfully and contact a healthcare professional when needed.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="tip-card p-4 shadow-sm">
+                        <h3 class="h5 text-humana-blue fw-bold">Lower Caregiver Stress</h3>
+                        <p class="text-muted mb-0">Use short “reset breaks,” ask family for role-sharing, and keep realistic expectations. A supported caregiver gives better care.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="tip-card p-4 shadow-sm">
+                        <h3 class="h5 text-humana-blue fw-bold">Protect Dignity in Communication</h3>
+                        <p class="text-muted mb-0">Ask before helping, offer choices, and avoid child-like language. Respectful tone builds trust and reduces conflict.</p>
+                    </div>
+                </div>
+            </div>
+
+            <section id="conversation-prompts" class="mt-5">
+                <h2 class="h3 fw-bold text-humana-blue mb-3">Empathy-Based Conversation Prompts</h2>
+                <div class="row g-3">
+                    <div class="col-md-4"><div class="prompt-card p-3">“What made you smile today?”</div></div>
+                    <div class="col-md-4"><div class="prompt-card p-3">“Would you like company or quiet time right now?”</div></div>
+                    <div class="col-md-4"><div class="prompt-card p-3">“How can I support you in a way that feels comfortable?”</div></div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-white border-top py-4">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2">
+            <span class="text-muted small">&copy; {{ year }} Generational Wellness Campaign</span>
+            <div class="small">
+                <a href="/physical-health" class="text-decoration-none me-3">Physical Health</a>
+                <a href="/social-connection" class="text-decoration-none">Social Connection</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities - Generational Wellness</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        :root {
+            --humana-green: #5C9A1B;
+            --humana-dark-blue: #005B68;
+            --humana-dark-green: #78BE20;
+            --humana-light-green: rgba(92, 154, 27, 0.1);
+            --humana-accent-orange: #F58220;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333;
+            background-color: #f8fcf5;
+            overflow-x: hidden;
+        }
+
+        .text-humana-blue {
+            color: var(--humana-dark-blue);
+        }
+
+        .text-humana-green {
+            color: var(--humana-green);
+        }
+
+        .bg-humana-green {
+            background-color: var(--humana-green);
+        }
+
+        .bg-humana-blue {
+            background-color: var(--humana-dark-blue);
+        }
+
+        .bg-humana-light-green {
+            background-color: var(--humana-light-green);
+        }
+
+        .btn-humana {
+            background-color: var(--humana-green);
+            color: white;
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-humana:hover {
+            background-color: var(--humana-dark-green);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .humana-main-header {
+            background: #fff;
+            border-top: 5px solid var(--humana-dark-green);
+            border-bottom: 1px solid #e0e0e0;
+            padding: 0.5rem 0;
+        }
+
+        .humana-brand-logo-container {
+            width: 45px;
+            height: 45px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+        }
+
+        .humana-brand-text-image {
+            height: 38px;
+            width: auto;
+        }
+
+        .humana-page-section-heading {
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            text-align: center;
+        }
+
+        .humana-catalogue-item-card {
+            background: white;
+            border-radius: 1.5rem;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .humana-catalogue-item-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1) !important;
+        }
+
+        .humana-item-level-tag {
+            font-size: 0.75rem;
+            padding: 0.4rem 0.8rem;
+            border-radius: 2rem;
+        }
+
+        .difficulty-easy {
+            background-color: #e8f5e9;
+            color: #2e7d32;
+        }
+
+        .difficulty-moderate {
+            background-color: #fff3e0;
+            color: #ef6c00;
+        }
+
+        .humana-interactive-quiz-wrapper {
+            background: white;
+            border-radius: 2rem;
+            padding: 3rem;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .humana-quiz-question-slide {
+            display: none;
+            animation: fadeIn 0.5s;
+        }
+
+        .humana-quiz-question-slide.active {
+            display: block;
+        }
+
+        .humana-quiz-answer-choice {
+            cursor: pointer;
+            padding: 1rem 1.5rem;
+            border: 2px solid #eee;
+            border-radius: 1rem;
+            margin-bottom: 1rem;
+            transition: all 0.2s;
+        }
+
+        .humana-quiz-answer-choice:hover {
+            border-color: var(--humana-green);
+            background-color: var(--humana-light-green);
+        }
+
+        .humana-next-question-arrow {
+            margin-top: 0.75rem;
+            text-align: center;
+            color: var(--humana-dark-blue);
+            font-weight: 600;
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        .humana-next-question-arrow i {
+            width: 18px;
+            height: 18px;
+            margin-right: 0.2rem;
+            vertical-align: -3px;
+            animation: humana-arrow-bounce 1.2s ease-in-out infinite;
+        }
+
+        @keyframes humana-arrow-bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(4px); }
+        }
+
+        .humana-activity-filter-toggle {
+            cursor: pointer;
+            padding: 0.5rem 1.2rem;
+            border-radius: 2rem;
+            border: 1px solid #ddd;
+            background: white;
+            margin: 0.25rem;
+            display: inline-block;
+            transition: all 0.2s;
+        }
+
+        .humana-activity-filter-toggle.active {
+            background-color: var(--humana-green);
+            color: white;
+            border-color: var(--humana-green);
+        }
+
+        .humana-catalogue-category-nav {
+            padding: 1rem;
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+            font-weight: 600;
+            color: #666;
+        }
+
+        .humana-catalogue-category-nav.active {
+            color: var(--humana-green);
+            border-bottom-color: var(--humana-green);
+        }
+
+        .humana-featured-weekly-activity {
+            background: linear-gradient(135deg, var(--humana-dark-blue) 0%, #00424d 100%);
+            color: white;
+            border-radius: 2rem;
+            padding: 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .humana-featured-weekly-activity::after {
+            content: 'Featured';
+            position: absolute;
+            top: 2rem;
+            right: -2.5rem;
+            background: var(--humana-accent-orange);
+            padding: 0.5rem 3rem;
+            transform: rotate(45deg);
+            font-weight: bold;
+            font-size: 0.8rem;
+        }
+
+        .humana-downloadable-activity-sheet {
+            border: 2px dashed #ccc;
+            padding: 2rem;
+            border-radius: 1rem;
+            background: #fff;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .humana-scroll-reveal-element {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .humana-scroll-reveal-element.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .humana-subpage-hero {
+            background: linear-gradient(to bottom, #fff, #f8fcf5);
+            padding: 4rem 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg humana-main-header sticky-top">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand d-flex align-items-center" href="/">
+                <div class="humana-brand-logo-container">
+                    <img src="{{ url_for('static', filename='humana_logo.png') }}" alt="Humana Logo"
+                        style="width:100%;">
+                </div>
+                <img src="{{ url_for('static', filename='humana_wordmark.png') }}" alt="Humana"
+                    class="humana-brand-text-image">
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#humana-navigation-menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="humana-navigation-menu">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/activities">Activities</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/#humana-section-wellness-tips">Wellness Tips</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-humana rounded-pill px-4" href="#">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mini Hero -->
+    <section class="humana-subpage-hero text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold text-humana-blue mb-3">Activities for Healthy Aging</h1>
+            <p class="lead text-muted mx-auto" style="max-width: 700px;">Explore guided activities designed to
+                strengthen family bonds and support the physical and mental well-being of older adults.</p>
+        </div>
+    </section>
+
+    <!-- Why Activities Matter -->
+    <section class="py-5 bg-white">
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="pe-lg-5">
+                        <h2 class="h1 fw-bold text-humana-blue mb-4">Why Activities Matter</h2>
+                        <p class="fs-5 text-muted mb-4">Regular social and physical activities can help older adults
+                            maintain mobility, reduce loneliness, and improve mental health. Even small daily moments
+                            can make a meaningful difference.</p>
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="p-2 bg-humana-light-green text-humana-green rounded-circle">
+                                <i data-lucide="check-circle-2"></i>
+                            </div>
+                            <span class="fw-medium">Slows cognitive decline through mental engagement</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="p-2 bg-humana-light-green text-humana-green rounded-circle">
+                                <i data-lucide="check-circle-2"></i>
+                            </div>
+                            <span class="fw-medium">Improves cardiovascular health with light movement</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="p-2 bg-humana-light-green text-humana-green rounded-circle">
+                                <i data-lucide="check-circle-2"></i>
+                            </div>
+                            <span class="fw-medium">Reduces isolation and depression through connection</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&q=80&w=800"
+                        alt="Activities" class="img-fluid rounded-5 shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activity Finder -->
+    <section id="humana-activity-finder-section" class="py-5 humana-scroll-reveal-element">
+        <div class="container py-5">
+            <div class="humana-page-section-heading">
+                <span class="text-humana-green fw-bold text-uppercase tracking-wider">Interactive Tool</span>
+                <h2 class="display-5 fw-bold text-humana-blue mt-2">Pick an Activity to Try Today</h2>
+                <p class="text-muted">Tell us your preferences and we'll suggest the perfect activity.</p>
+            </div>
+
+            <div class="bg-white rounded-5 shadow-sm p-4 p-md-5 mb-5">
+                <div class="row g-4">
+                    <div class="col-md-3">
+                        <label class="fw-bold mb-2">Time Available</label>
+                        <div class="d-flex flex-wrap" id="humana-activity-timer-filter">
+                            <div class="humana-activity-filter-toggle active" data-value="10">10 min</div>
+                            <div class="humana-activity-filter-toggle" data-value="30">30 min</div>
+                            <div class="humana-activity-filter-toggle" data-value="60">1 hour+</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="fw-bold mb-2">Setting</label>
+                        <div class="d-flex flex-wrap" id="humana-activity-location-filter">
+                            <div class="humana-activity-filter-toggle active" data-value="indoor">Indoor</div>
+                            <div class="humana-activity-filter-toggle" data-value="outdoor">Outdoor</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="fw-bold mb-2">Energy Level</label>
+                        <div class="d-flex flex-wrap" id="humana-activity-effort-filter">
+                            <div class="humana-activity-filter-toggle active" data-value="low">Low</div>
+                            <div class="humana-activity-filter-toggle" data-value="moderate">Moderate</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="fw-bold mb-2">Interest</label>
+                        <select class="form-select border-0 px-3 py-2 bg-light rounded-pill"
+                            id="humana-activity-topic-selector">
+                            <option value="all">All Interests</option>
+                            <option value="social">Social</option>
+                            <option value="health">Health</option>
+                            <option value="learning">Learning</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="text-center mt-5">
+                    <button class="btn btn-humana btn-lg rounded-pill px-5" onclick="recommendActivity()">Find
+                        Activity</button>
+                </div>
+            </div>
+
+            <div id="humana-activity-match-display" class="text-center" style="display: none;">
+                <div class="animate__animated animate__fadeInUp">
+                    <h4 class="text-muted mb-2">We Recommend:</h4>
+                    <div class="card border-0 shadow-lg p-4 mx-auto"
+                        style="max-width: 500px; border-radius: 2rem; border-left: 8px solid var(--humana-green);">
+                        <h3 id="humana-activity-match-name" class="fw-bold text-humana-blue">Cooking a Healthy Meal</h3>
+                        <p id="humana-activity-match-description" class="text-muted mb-3">Prepare a light soup together
+                            while discussing
+                            old family stories.</p>
+                        <div class="d-flex justify-content-center gap-3">
+                            <span class="humana-item-level-tag difficulty-easy"
+                                id="humana-activity-match-difficulty">Easy</span>
+                            <span class="text-muted small" id="humana-activity-match-duration"><i data-lucide="clock"
+                                    class="size-sm"></i> 30 min</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="humana-family-quiz-section" class="py-5 bg-light humana-scroll-reveal-element">
+        <div class="container py-5">
+            <div class="humana-page-section-heading">
+                <h2 class="display-5 fw-bold text-humana-blue">What Activity Fits Your Family Best?</h2>
+                <p class="text-muted">Take this quick quiz to discover your intergenerational match.</p>
+            </div>
+
+            <div class="humana-interactive-quiz-wrapper">
+                <div id="humana-family-quiz-step-activity-level" class="humana-quiz-question-slide active">
+                    <h4 class="fw-bold mb-4">How active is your older loved one?</h4>
+                    <div class="humana-quiz-answer-choice" onclick="nextQuiz(1, 'active')">Very active and enjoys
+                        movement</div>
+                    <div class="humana-quiz-answer-choice" onclick="nextQuiz(1, 'moderate')">Enjoys short walks and
+                        light movement
+                    </div>
+                    <div class="humana-quiz-answer-choice" onclick="nextQuiz(1, 'quiet')">Prefers quiet, seated
+                        activities</div>
+                    <div class="humana-next-question-arrow"><i data-lucide="chevrons-down"></i>Choose an option to go to next question</div>
+                </div>
+
+                <div id="humana-family-quiz-step-time-commitment" class="humana-quiz-question-slide">
+                    <h4 class="fw-bold mb-4">How much time do you have today?</h4>
+                    <div class="humana-quiz-answer-choice" onclick="nextQuiz(2, '10')">10 minutes</div>
+                    <div class="humana-quiz-answer-choice" onclick="nextQuiz(2, '30')">30 minutes</div>
+                    <div class="humana-quiz-answer-choice" onclick="nextQuiz(2, '60')">1 hour or more</div>
+                    <div class="humana-next-question-arrow"><i data-lucide="chevrons-down"></i>Choose an option to go to next question</div>
+                </div>
+
+                <div id="humana-family-quiz-step-user-preference" class="humana-quiz-question-slide">
+                    <h4 class="fw-bold mb-4">What sounds most enjoyable to both of you?</h4>
+                    <div class="humana-quiz-answer-choice" onclick="finishQuiz('outdoor')">Walking outdoors and fresh
+                        air</div>
+                    <div class="humana-quiz-answer-choice" onclick="finishQuiz('social')">Sharing stories and memories
+                    </div>
+                    <div class="humana-quiz-answer-choice" onclick="finishQuiz('learning')">Learning something new
+                        together</div>
+                </div>
+
+                <div id="humana-family-quiz-final-match" class="humana-quiz-question-slide text-center">
+                    <div class="mb-4">
+                        <i data-lucide="award" class="text-humana-green" style="width: 64px; height: 64px;"></i>
+                    </div>
+                    <h3 class="fw-bold text-humana-blue mb-2">Your Activity Match:</h3>
+                    <h2 id="humana-family-quiz-match-name" class="text-humana-green fw-bold mb-3">Memory Story Sharing
+                    </h2>
+                    <p id="humana-family-quiz-match-description" class="text-muted mb-4">This low-impact,
+                        high-connection activity is perfect
+                        for your schedule and energy levels.</p>
+                    <button class="btn btn-humana rounded-pill px-4" onclick="resetQuiz()">Take Quiz Again</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activity Categories -->
+    <section id="humana-catalogue-section" class="py-5 humana-scroll-reveal-element">
+        <div class="container py-5">
+            <div class="humana-page-section-heading">
+                <h2 class="display-5 fw-bold text-humana-blue">Explore All Activities</h2>
+                <div class="d-flex justify-content-center gap-4 mt-4 overflow-auto pb-2">
+                    <div class="humana-catalogue-category-nav active" data-cat="all">All</div>
+                    <div class="humana-catalogue-category-nav" data-cat="physical">Physical</div>
+                    <div class="humana-catalogue-category-nav" data-cat="social">Social</div>
+                    <div class="humana-catalogue-category-nav" data-cat="learning">Learning</div>
+                    <div class="humana-catalogue-category-nav" data-cat="wellness">Wellness</div>
+                </div>
+            </div>
+
+            <div class="row g-4" id="humana-activity-catalogue-container">
+                <!-- Activities will be injected here by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Activity of the Week -->
+    <section id="humana-weekly-featured-section" class="py-5 humana-scroll-reveal-element">
+        <div class="container">
+            <div class="humana-featured-weekly-activity shadow-lg">
+                <div class="row align-items-center">
+                    <div class="col-lg-7">
+                        <span class="badge bg-white text-humana-blue rounded-pill px-3 py-1 mb-3">Weekly Choice</span>
+                        <h2 class="display-4 fw-bold mb-3">Gratitude Conversation</h2>
+                        <p class="fs-5 opacity-90 mb-4">Write down three favorite family memories together and talk
+                            about why they matter to you. This simple exercise strengthens memory and emotional
+                            connection.</p>
+                        <div class="d-flex gap-4 mb-4">
+                            <div>
+                                <small class="d-block opacity-75">Time</small>
+                                <strong>15 Minutes</strong>
+                            </div>
+                            <div>
+                                <small class="d-block opacity-75">Benefit</small>
+                                <strong>Emotional Health</strong>
+                            </div>
+                        </div>
+                        <button class="btn btn-light btn-lg rounded-pill px-5 text-humana-blue fw-bold">Try This
+                            Activity</button>
+                    </div>
+                    <div class="col-lg-5 d-none d-lg-block">
+                        <div class="humana-downloadable-activity-sheet shadow text-center">
+                            <i data-lucide="download" class="text-humana-green mb-3"></i>
+                            <h5 class="text-dark fw-bold">Gratitude Card</h5>
+                            <p class="small text-muted">Ready to print and use at the dinner table.</p>
+                            <button class="btn btn-outline-success btn-sm rounded-pill">Download PDF</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light pt-5 pb-4 mt-5 border-top">
+        <div class="container text-center">
+            <p class="text-muted small">&copy; 2026 Generational Wellness Campaign. Inspired by Humana.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+
+        const activities = [
+            { title: "Wellness Walk", desc: "Take a short walk together to support mobility and heart health.", cat: "physical", diff: "Easy", time: "20 min", icon: "footprints" },
+            { title: "Heritage Cooking", desc: "Learn a family recipe while ensuring nutritious meal preparation.", cat: "wellness", diff: "Moderate", time: "45 min", icon: "utensils" },
+            { title: "Tech Support", desc: "Help navigate video calls or health apps to reduce isolation.", cat: "learning", diff: "Easy", time: "15 min", icon: "smartphone" },
+            { title: "Memory Story Sharing", desc: "Look through old photos and record their favorite memories.", cat: "social", diff: "Easy", time: "20 min", icon: "book-open" },
+            { title: "Light Stretching", desc: "Gentle chair exercises to improve flexibility and range of motion.", cat: "physical", diff: "Easy", time: "10 min", icon: "accessibility" },
+            { title: "Gardening Together", desc: "Plant easy-to-grow herbs or flowers in a raised bed or pots.", cat: "physical", diff: "Moderate", time: "30 min", icon: "flower" },
+            { title: "Board Games", desc: "Stimulate cognitive health with a fun round of cards or chess.", cat: "social", diff: "Easy", time: "30 min", icon: "grid" },
+            { title: "Tech Lessons", desc: "In-depth session on using tablets for entertainment and health.", cat: "learning", diff: "Moderate", time: "30 min", icon: "tablet" },
+            { title: "Meditation Together", desc: "Practice mindful breathing to reduce stress and anxiety.", cat: "wellness", diff: "Easy", time: "10 min", icon: "wind" },
+            { title: "Healthy Cooking", desc: "Prepare a heart-healthy meal focusing on fresh ingredients.", cat: "wellness", diff: "Moderate", time: "40 min", icon: "carrot" }
+        ];
+
+        function renderActivities(category = 'all') {
+            const grid = document.getElementById('humana-activity-catalogue-container');
+            const filtered = category === 'all' ? activities : activities.filter(a => a.cat === category);
+
+            grid.innerHTML = filtered.map(a => `
+                <div class="col-md-6 col-lg-4 animate__animated animate__fadeIn">
+                    <div class="humana-catalogue-item-card p-4">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <div class="p-2 bg-humana-light-green rounded-3 text-humana-green">
+                                <i data-lucide="${a.icon}"></i>
+                            </div>
+                            <span class="humana-item-level-tag ${a.diff === 'Easy' ? 'difficulty-easy' : 'difficulty-moderate'}">${a.diff}</span>
+                        </div>
+                        <h3 class="h4 fw-bold text-humana-blue">${a.title}</h3>
+                        <p class="text-muted small mb-4">${a.desc}</p>
+                        <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center">
+                            <span class="text-muted small"><i data-lucide="clock" class="size-sm me-1"></i> ${a.time}</span>
+                            <button class="btn btn-link text-humana-green text-decoration-none fw-bold p-0">Details <i data-lucide="chevron-right" class="size-sm"></i></button>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+            lucide.createIcons();
+        }
+
+        renderActivities();
+
+        // Category Tabs
+        document.querySelectorAll('.humana-catalogue-category-nav').forEach(tab => {
+            tab.addEventListener('click', () => {
+                document.querySelectorAll('.humana-catalogue-category-nav').forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                renderActivities(tab.dataset.cat);
+            });
+        });
+
+        // Filter Pills Logic
+        document.querySelectorAll('.humana-activity-filter-toggle').forEach(pill => {
+            pill.addEventListener('click', () => {
+                pill.parentElement.querySelectorAll('.humana-activity-filter-toggle').forEach(p => p.classList.remove('active'));
+                pill.classList.add('active');
+            });
+        });
+
+        function recommendActivity() {
+            const time = document.querySelector('#humana-activity-timer-filter .active').dataset.value;
+            const setting = document.querySelector('#humana-activity-location-filter .active').dataset.value;
+            const energy = document.querySelector('#humana-activity-effort-filter .active').dataset.value;
+
+            const resultDiv = document.getElementById('humana-activity-match-display');
+            const title = document.getElementById('humana-activity-match-name');
+            const desc = document.getElementById('humana-activity-match-description');
+            const diff = document.getElementById('humana-activity-match-difficulty');
+            const timeSpan = document.getElementById('humana-activity-match-duration');
+
+            // Simple logic for representation
+            let match;
+            if (setting === 'outdoor') {
+                match = activities[0]; // Walk
+            } else if (energy === 'moderate') {
+                match = activities[1]; // Cooking
+            } else if (time === '10') {
+                match = activities[4]; // Stretching
+            } else {
+                match = activities[3]; // Stories
+            }
+
+            title.innerText = match.title;
+            desc.innerText = match.desc;
+            diff.innerText = match.diff;
+            diff.className = `humana-item-level-tag ${match.diff === 'Easy' ? 'difficulty-easy' : 'difficulty-moderate'}`;
+            timeSpan.innerHTML = `<i data-lucide="clock"></i> ${match.time}`;
+
+            resultDiv.style.display = 'block';
+            resultDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            lucide.createIcons();
+        }
+
+        // Quiz Logic
+        let currentStep = 1;
+        function nextQuiz(step, value) {
+            document.getElementById(`quiz-step-${step}`.replace('quiz-step', 'humana-family-quiz-step-') || `step-${step}`).classList.remove('active');
+            // Fix: the step IDs are different now
+            const stepIds = ['humana-family-quiz-step-activity-level', 'humana-family-quiz-step-time-commitment', 'humana-family-quiz-step-user-preference'];
+            document.getElementById(stepIds[step - 1]).classList.remove('active');
+            currentStep = step + 1;
+            document.getElementById(stepIds[currentStep - 1]).classList.add('active');
+        }
+
+        // Overwriting the nextQuiz function to be cleaner with new IDs
+        window.nextQuiz = function (step, value) {
+            const stepIds = ['humana-family-quiz-step-activity-level', 'humana-family-quiz-step-time-commitment', 'humana-family-quiz-step-user-preference'];
+            document.getElementById(stepIds[step - 1]).classList.remove('active');
+            document.getElementById(stepIds[step]).classList.add('active');
+        };
+
+        function finishQuiz(preference) {
+            document.getElementById(`humana-family-quiz-step-user-preference`).classList.remove('active');
+            const result = document.getElementById('humana-family-quiz-final-match');
+            const title = document.getElementById('humana-family-quiz-match-name');
+
+            if (preference === 'outdoor') title.innerText = "Wellness Walks";
+            else if (preference === 'social') title.innerText = "Memory Story Sharing";
+            else title.innerText = "Tech Lessons";
+
+            result.classList.add('active');
+        }
+
+        function resetQuiz() {
+            document.getElementById('humana-family-quiz-final-match').classList.remove('active');
+            document.getElementById('humana-family-quiz-step-activity-level').classList.add('active');
+        }
+
+        // Scroll Reveal
+        const observerOptions = { threshold: 0.15 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.humana-scroll-reveal-element').forEach(el => observer.observe(el));
+    </script>
+</body>
+
+</html>
