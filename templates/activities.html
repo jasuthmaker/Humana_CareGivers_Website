@@ -172,6 +172,16 @@
             50% { transform: translateY(4px); }
         }
 
+        .humana-filter-arrow {
+            color: var(--humana-green);
+            opacity: 0.7;
+        }
+
+        .humana-filter-arrow i {
+            width: 24px;
+            height: 24px;
+        }
+
         .humana-activity-filter-toggle {
             cursor: pointer;
             padding: 0.5rem 1.2rem;
@@ -350,7 +360,7 @@
             </div>
 
             <div class="bg-white rounded-5 shadow-sm p-4 p-md-5 mb-5">
-                <div class="row g-4">
+                <div class="row g-4 align-items-center">
                     <div class="col-md-3">
                         <label class="fw-bold mb-2">Time Available</label>
                         <div class="d-flex flex-wrap" id="humana-activity-timer-filter">
@@ -359,6 +369,9 @@
                             <div class="humana-activity-filter-toggle" data-value="60">1 hour+</div>
                         </div>
                     </div>
+                    <div class="col-auto d-none d-md-flex justify-content-center humana-filter-arrow">
+                        <i data-lucide="chevron-right"></i>
+                    </div>
                     <div class="col-md-3">
                         <label class="fw-bold mb-2">Setting</label>
                         <div class="d-flex flex-wrap" id="humana-activity-location-filter">
@@ -366,12 +379,18 @@
                             <div class="humana-activity-filter-toggle" data-value="outdoor">Outdoor</div>
                         </div>
                     </div>
+                    <div class="col-auto d-none d-md-flex justify-content-center humana-filter-arrow">
+                        <i data-lucide="chevron-right"></i>
+                    </div>
                     <div class="col-md-3">
                         <label class="fw-bold mb-2">Energy Level</label>
                         <div class="d-flex flex-wrap" id="humana-activity-effort-filter">
                             <div class="humana-activity-filter-toggle active" data-value="low">Low</div>
                             <div class="humana-activity-filter-toggle" data-value="moderate">Moderate</div>
                         </div>
+                    </div>
+                    <div class="col-auto d-none d-md-flex justify-content-center humana-filter-arrow">
+                        <i data-lucide="chevron-right"></i>
                     </div>
                     <div class="col-md-3">
                         <label class="fw-bold mb-2">Interest</label>
