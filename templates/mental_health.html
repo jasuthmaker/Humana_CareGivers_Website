@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -12,93 +13,613 @@
             --humana-dark-blue: #005B68;
             --humana-dark-green: #78BE20;
             --humana-light-green: rgba(92, 154, 27, 0.1);
+            --mental-blue: #3a7bd5;
+            --mental-light: #edf3ff;
         }
-        body { font-family: 'Inter', sans-serif; color: #333; background: #f7fbff; }
-        .text-humana-blue { color: var(--humana-dark-blue); }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; color: #333; background: #f7fbff; overflow-x: hidden; }
+
+        /* ── Navbar ── */
+        .humana-main-header {
+            background: #fff;
+            border-top: 4px solid var(--humana-green);
+            border-bottom: 1px solid #e0e0e0;
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+            min-height: 64px;
+        }
+        .humana-main-header .navbar-brand { padding: 0; display: flex; align-items: stretch; margin-top: -4px; }
+        .humana-brand-logo-container {
+            width: 65px; height: 65px; background: transparent; display: flex;
+            align-items: stretch; justify-content: center; flex-shrink: 0;
+            align-self: stretch; margin-right: 12px; overflow: hidden;
+        }
+        .humana-brand-text-image { height: 56px; width: auto; align-self: center; margin-left: 4px; }
+        .humana-main-header .nav-link {
+            color: #333; font-weight: 500; padding: 1.2rem 1rem !important;
+            font-size: 0.95rem; transition: color 0.2s; border-bottom: 3px solid transparent;
+        }
+        .humana-main-header .nav-link:hover,
+        .humana-main-header .nav-link.active {
+            color: var(--humana-dark-green);
+            border-bottom: 3px solid var(--humana-dark-green);
+        }
+
+        /* ── Utilities ── */
+        .text-humana-blue  { color: var(--humana-dark-blue); }
         .text-humana-green { color: var(--humana-green); }
-        .bg-humana-light-green { background: var(--humana-light-green); }
-        .btn-humana { background: var(--humana-green); color: #fff; border: 0; }
+        .btn-humana { background: var(--humana-green); color: #fff; border: 0; transition: background 0.2s; }
         .btn-humana:hover { background: var(--humana-dark-green); color: #fff; }
-        .hero { background: linear-gradient(130deg, #ffffff 0%, #eef8f8 100%); border-bottom: 1px solid #e8ecef; }
-        .tip-card { background: #fff; border-radius: 1rem; border: 1px solid rgba(0,0,0,0.05); height: 100%; }
-        .prompt-card { border-radius: .8rem; background: #ffffff; border: 1px solid #dbe8eb; }
+        .btn-humana-outline { border: 2px solid var(--humana-green); color: var(--humana-green); background: transparent; transition: all 0.2s; }
+        .btn-humana-outline:hover { background: var(--humana-green); color: #fff; }
+
+        /* ── Hero ── */
+        .hero {
+            background: linear-gradient(135deg, #e8f0ff 0%, #d8eef0 100%);
+            border-bottom: 1px solid #c8dde8;
+            position: relative; overflow: hidden;
+        }
+        .hero::before {
+            content: ''; position: absolute; top: -80px; right: -80px;
+            width: 350px; height: 350px;
+            background: rgba(58,123,213,0.06);
+            border-radius: 50%;
+        }
+        .hero-icon-wrap {
+            width: 160px; height: 160px;
+            background: rgba(0,91,104,0.1);
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 5rem; color: var(--humana-dark-blue);
+        }
+
+        /* ── Tip Cards ── */
+        .tip-card {
+            background: #fff; border-radius: 1rem;
+            border: 1px solid rgba(0,0,0,0.06);
+            height: 100%; transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .tip-card:hover { transform: translateY(-4px); box-shadow: 0 12px 28px rgba(0,0,0,0.1) !important; }
+        .tip-icon-circle {
+            width: 52px; height: 52px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.4rem; flex-shrink: 0;
+        }
+
+        /* ── Warning Signs ── */
+        .warning-item {
+            background: #fff; border-radius: .8rem;
+            border-left: 4px solid #f0b429;
+            transition: box-shadow 0.2s;
+        }
+        .warning-item:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
+
+        /* ── Prompt Cards ── */
+        .prompt-card {
+            background: #fff; border-radius: 1rem;
+            border: 1px solid rgba(0,91,104,0.15);
+            height: 100%; transition: transform 0.2s, box-shadow 0.2s;
+            position: relative; overflow: hidden;
+        }
+        .prompt-card::before {
+            content: '"'; font-size: 6rem; font-weight: 700;
+            color: var(--mental-light); position: absolute;
+            top: -20px; left: 10px; line-height: 1;
+            font-family: Georgia, serif;
+        }
+        .prompt-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.1); }
+
+        /* ── Self-Care Section ── */
+        .self-care-card {
+            background: #fff; border-radius: 1rem;
+            border: 1px solid rgba(0,0,0,0.06);
+            height: 100%;
+        }
+
+        /* ── Accordion ── */
+        .accordion-button:not(.collapsed) {
+            background: var(--mental-light); color: var(--humana-dark-blue); box-shadow: none;
+        }
+        .accordion-button:focus { box-shadow: none; }
+        .accordion-item { border: 1px solid rgba(0,0,0,0.08); border-radius: .75rem !important; margin-bottom: .5rem; overflow: hidden; }
+
+        /* ── CTA ── */
+        .weekly-cta {
+            background: linear-gradient(135deg, var(--humana-dark-blue) 0%, #007a8a 100%);
+            border-radius: 1.25rem;
+        }
+
+        /* ── Cross-nav ── */
+        .cross-nav-card {
+            border-radius: 1rem; border: none;
+            text-decoration: none; display: block;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .cross-nav-card:hover { transform: translateY(-4px); box-shadow: 0 12px 28px rgba(0,0,0,0.12); }
+
+        /* ── Footer ── */
+        footer a { color: var(--humana-dark-blue); }
+        footer a:hover { color: var(--humana-green); }
+
+        /* ── Responsive ── */
+        @media (max-width: 991px) {
+            .hero-icon-wrap { width: 110px; height: 110px; font-size: 3.5rem; }
+            .humana-brand-logo-container { width: 50px; height: 50px; }
+            .humana-brand-text-image { height: 42px; }
+        }
+        @media (max-width: 575px) {
+            .hero-icon-wrap { display: none; }
+        }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold text-humana-blue" href="/">Generational Wellness</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain"><span class="navbar-toggler-icon"></span></button>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg humana-main-header sticky-top">
+        <div class="container-fluid px-2 px-lg-5">
+            <a class="navbar-brand d-flex align-items-stretch" href="/">
+                <div class="humana-brand-logo-container">
+                    <img src="{{ url_for('static', filename='humana_logo.png') }}" alt="Humana Logo"
+                        style="width:100%;height:100%;object-fit:cover;display:block;">
+                </div>
+                <img src="{{ url_for('static', filename='humana_wordmark.png') }}" alt="Humana"
+                    class="humana-brand-text-image">
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navMain">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="/physical-health">Physical</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="/mental-health">Mental</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/social-connection">Social</a></li>
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="/physical-health">Physical Health</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/mental-health">Mental Health</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/social-connection">Social Connection</a></li>
                     <li class="nav-item"><a class="nav-link" href="/activities">Activities</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-humana rounded-pill px-4" href="/activities">Explore &rarr;</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <!-- Hero -->
     <header class="hero py-5">
-        <div class="container py-4">
+        <div class="container py-3 py-lg-4">
             <div class="row align-items-center g-4">
                 <div class="col-lg-8">
-                    <span class="badge bg-humana-light-green text-humana-green rounded-pill px-3 py-2 mb-3">Mental & Emotional Wellness</span>
-                    <h1 class="display-5 fw-bold text-humana-blue">Calm conversations and meaningful routines support emotional health.</h1>
-                    <p class="lead text-muted mt-3">Loneliness, stress, and major life transitions can affect older adults. Caregivers can help by creating structure, listening with empathy, and encouraging connection.</p>
-                    <a class="btn btn-humana rounded-pill px-4 mt-2" href="#conversation-prompts">Use conversation prompts</a>
+                    <span class="badge rounded-pill px-3 py-2 mb-3 fw-semibold"
+                        style="background:rgba(0,91,104,0.12);color:var(--humana-dark-blue);">
+                        <i class="bi bi-heart me-1"></i> Mental &amp; Emotional Wellness
+                    </span>
+                    <h1 class="fw-bold text-humana-blue mb-3" style="font-size:clamp(1.8rem,4vw,2.8rem);line-height:1.2;">
+                        Calm conversations and meaningful routines support emotional health.
+                    </h1>
+                    <p class="lead text-muted mb-4" style="max-width:600px;">
+                        Loneliness, stress, and life transitions can deeply affect older adults. Caregivers can help by creating structure, listening with empathy, and encouraging connection.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a class="btn btn-humana rounded-pill px-4 py-2" href="#tips">
+                            <i class="bi bi-shield-heart me-1"></i> Caregiver Strategies
+                        </a>
+                        <a class="btn btn-humana-outline rounded-pill px-4 py-2" href="#conversation-prompts">
+                            <i class="bi bi-chat-heart me-1"></i> Conversation Prompts
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center d-none d-lg-flex justify-content-center">
+                    <div class="hero-icon-wrap">
+                        <i class="bi bi-heart-pulse"></i>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <main class="py-5">
+    <!-- Awareness Bar -->
+    <section class="py-3 border-bottom" style="background:#fff;">
         <div class="container">
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="tip-card p-4 shadow-sm">
-                        <h3 class="h5 text-humana-blue fw-bold">Build Gentle Daily Rhythm</h3>
-                        <p class="text-muted mb-0">Keep regular sleep and meal times, include sunlight and movement, and plan one enjoyable moment each day (music, prayer, tea chat, puzzle).</p>
+            <div class="row g-3 text-center">
+                <div class="col-6 col-md-3">
+                    <div class="py-2 px-3" style="background:var(--mental-light);border-radius:.75rem;">
+                        <div class="fw-bold fs-5 text-humana-blue">1 in 5</div>
+                        <div class="text-muted small">older adults experience depression</div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="tip-card p-4 shadow-sm">
-                        <h3 class="h5 text-humana-blue fw-bold">Notice Mood Changes Early</h3>
-                        <p class="text-muted mb-0">Watch for long-lasting sadness, withdrawal, confusion, or sleep changes. Share concerns respectfully and contact a healthcare professional when needed.</p>
+                <div class="col-6 col-md-3">
+                    <div class="py-2 px-3" style="background:rgba(92,154,27,0.08);border-radius:.75rem;">
+                        <div class="fw-bold fs-5" style="color:var(--humana-green);">50%</div>
+                        <div class="text-muted small">of cases go undiagnosed</div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="tip-card p-4 shadow-sm">
-                        <h3 class="h5 text-humana-blue fw-bold">Lower Caregiver Stress</h3>
-                        <p class="text-muted mb-0">Use short “reset breaks,” ask family for role-sharing, and keep realistic expectations. A supported caregiver gives better care.</p>
+                <div class="col-6 col-md-3">
+                    <div class="py-2 px-3" style="background:rgba(0,91,104,0.08);border-radius:.75rem;">
+                        <div class="fw-bold fs-5 text-humana-blue">Daily</div>
+                        <div class="text-muted small">routine reduces anxiety significantly</div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="tip-card p-4 shadow-sm">
-                        <h3 class="h5 text-humana-blue fw-bold">Protect Dignity in Communication</h3>
-                        <p class="text-muted mb-0">Ask before helping, offer choices, and avoid child-like language. Respectful tone builds trust and reduces conflict.</p>
+                <div class="col-6 col-md-3">
+                    <div class="py-2 px-3" style="background:rgba(240,180,41,0.12);border-radius:.75rem;">
+                        <div class="fw-bold fs-5" style="color:#b07d00;">Caregiver</div>
+                        <div class="text-muted small">wellbeing directly affects elder care</div>
                     </div>
                 </div>
             </div>
-
-            <section id="conversation-prompts" class="mt-5">
-                <h2 class="h3 fw-bold text-humana-blue mb-3">Empathy-Based Conversation Prompts</h2>
-                <div class="row g-3">
-                    <div class="col-md-4"><div class="prompt-card p-3">“What made you smile today?”</div></div>
-                    <div class="col-md-4"><div class="prompt-card p-3">“Would you like company or quiet time right now?”</div></div>
-                    <div class="col-md-4"><div class="prompt-card p-3">“How can I support you in a way that feels comfortable?”</div></div>
-                </div>
-            </section>
         </div>
+    </section>
+
+    <main>
+
+        <!-- Core Tip Cards -->
+        <section id="tips" class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold text-humana-blue">Four Pillars of Mental Wellness</h2>
+                    <p class="text-muted mx-auto" style="max-width:540px;">Practical strategies for creating emotional safety and stability for older adults in your care.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="tip-card p-4 shadow-sm">
+                            <div class="tip-icon-circle mb-3" style="background:rgba(0,91,104,0.1);">
+                                <i class="bi bi-sun" style="color:var(--humana-dark-blue);"></i>
+                            </div>
+                            <h3 class="h5 text-humana-blue fw-bold">Build Gentle Daily Rhythm</h3>
+                            <p class="text-muted small mb-3">Keep regular sleep and meal times, include sunlight and movement, and plan one enjoyable moment each day — music, prayer, tea, or a puzzle.</p>
+                            <ul class="list-unstyled small text-muted mb-0">
+                                <li class="mb-1"><i class="bi bi-check-circle-fill text-humana-green me-2"></i>Fixed morning wake-up time</li>
+                                <li class="mb-1"><i class="bi bi-check-circle-fill text-humana-green me-2"></i>One enjoyable daily ritual</li>
+                                <li><i class="bi bi-check-circle-fill text-humana-green me-2"></i>Consistent bedtime routine</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="tip-card p-4 shadow-sm">
+                            <div class="tip-icon-circle mb-3" style="background:rgba(240,180,41,0.15);">
+                                <i class="bi bi-eye" style="color:#b07d00;"></i>
+                            </div>
+                            <h3 class="h5 text-humana-blue fw-bold">Notice Mood Changes Early</h3>
+                            <p class="text-muted small mb-3">Watch for lasting sadness, withdrawal, confusion, or sleep disruption. Early attention prevents escalation.</p>
+                            <ul class="list-unstyled small text-muted mb-0">
+                                <li class="mb-1"><i class="bi bi-check-circle-fill text-humana-green me-2"></i>Track mood weekly in a journal</li>
+                                <li class="mb-1"><i class="bi bi-check-circle-fill text-humana-green me-2"></i>Note appetite or sleep changes</li>
+                                <li><i class="bi bi-check-circle-fill text-humana-green me-2"></i>Consult a professional early</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="tip-card p-4 shadow-sm">
+                            <div class="tip-icon-circle mb-3" style="background:rgba(92,154,27,0.12);">
+                                <i class="bi bi-battery-charging" style="color:var(--humana-green);"></i>
+                            </div>
+                            <h3 class="h5 text-humana-blue fw-bold">Lower Caregiver Stress</h3>
+                            <p class="text-muted small mb-3">Use short "reset breaks," ask family for role-sharing, and keep realistic expectations. A supported caregiver gives better care.</p>
+                            <ul class="list-unstyled small text-muted mb-0">
+                                <li class="mb-1"><i class="bi bi-check-circle-fill text-humana-green me-2"></i>5-minute breathing breaks</li>
+                                <li class="mb-1"><i class="bi bi-check-circle-fill text-humana-green me-2"></i>Share caregiving tasks</li>
+                                <li><i class="bi bi-check-circle-fill text-humana-green me-2"></i>Join a caregiver support group</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="tip-card p-4 shadow-sm">
+                            <div class="tip-icon-circle mb-3" style="background:rgba(0,91,104,0.1);">
+                                <i class="bi bi-person-heart" style="color:var(--humana-dark-blue);"></i>
+                            </div>
+                            <h3 class="h5 text-humana-blue fw-bold">Protect Dignity</h3>
+                            <p class="text-muted small mb-3">Ask before helping, offer choices, and avoid child-like language. Respectful tone builds trust and reduces conflict.</p>
+                            <ul class="list-unstyled small text-muted mb-0">
+                                <li class="mb-1"><i class="bi bi-check-circle-fill text-humana-green me-2"></i>"Would you like help with…?"</li>
+                                <li class="mb-1"><i class="bi bi-check-circle-fill text-humana-green me-2"></i>Always offer choices</li>
+                                <li><i class="bi bi-check-circle-fill text-humana-green me-2"></i>Use adult, warm language</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning Signs -->
+        <section class="py-5" style="background:#fffbf0;">
+            <div class="container">
+                <div class="row align-items-center mb-4">
+                    <div class="col">
+                        <h2 class="fw-bold text-humana-blue mb-1">
+                            <i class="bi bi-exclamation-triangle text-warning me-2"></i>Warning Signs to Watch For
+                        </h2>
+                        <p class="text-muted mb-0">These changes may indicate depression, anxiety, or cognitive decline that needs professional attention.</p>
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="warning-item p-3 shadow-sm h-100">
+                            <div class="fw-semibold text-humana-blue small mb-1"><i class="bi bi-emoji-frown me-2 text-warning"></i>Emotional Signs</div>
+                            <ul class="text-muted small mb-0 ps-3">
+                                <li>Persistent sadness (2+ weeks)</li>
+                                <li>Hopelessness or helplessness</li>
+                                <li>Increased irritability</li>
+                                <li>Loss of interest in hobbies</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="warning-item p-3 shadow-sm h-100">
+                            <div class="fw-semibold text-humana-blue small mb-1"><i class="bi bi-person-dash me-2 text-warning"></i>Behavioral Signs</div>
+                            <ul class="text-muted small mb-0 ps-3">
+                                <li>Social withdrawal</li>
+                                <li>Neglecting personal hygiene</li>
+                                <li>Refusing meals repeatedly</li>
+                                <li>Giving away belongings</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="warning-item p-3 shadow-sm h-100">
+                            <div class="fw-semibold text-humana-blue small mb-1"><i class="bi bi-brain me-2 text-warning"></i>Cognitive Signs</div>
+                            <ul class="text-muted small mb-0 ps-3">
+                                <li>Frequent confusion</li>
+                                <li>Memory gaps</li>
+                                <li>Getting lost in familiar places</li>
+                                <li>Difficulty completing tasks</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="warning-item p-3 shadow-sm h-100">
+                            <div class="fw-semibold text-humana-blue small mb-1"><i class="bi bi-moon me-2 text-warning"></i>Physical Signs</div>
+                            <ul class="text-muted small mb-0 ps-3">
+                                <li>Significant sleep changes</li>
+                                <li>Unexplained weight loss</li>
+                                <li>Fatigue with no cause</li>
+                                <li>Chronic unexplained pain</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-3 p-3 rounded-3" style="background:rgba(240,180,41,0.12);border:1px solid rgba(240,180,41,0.3);">
+                    <p class="mb-0 small"><strong>When in doubt, act early.</strong> Share observations calmly with a doctor: <em>"I've noticed she seems sadder and is sleeping more than usual — should we discuss this at the next appointment?"</em></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conversation Prompts -->
+        <section id="conversation-prompts" class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold text-humana-blue">Empathy-Based Conversation Prompts</h2>
+                    <p class="text-muted mx-auto" style="max-width:520px;">Use these as natural conversation starters — not scripts. The goal is listening, not answering.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="prompt-card p-4 shadow-sm">
+                            <p class="fw-semibold text-humana-blue mb-2 mt-3 position-relative">"What made you smile today?"</p>
+                            <p class="text-muted small mb-0">Opens conversation about positive moments and redirects attention to joy without dismissing difficulties.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="prompt-card p-4 shadow-sm">
+                            <p class="fw-semibold text-humana-blue mb-2 mt-3 position-relative">"Would you like company or quiet time right now?"</p>
+                            <p class="text-muted small mb-0">Respects the elder's need for autonomy. Either answer is acceptable — the offering matters.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="prompt-card p-4 shadow-sm">
+                            <p class="fw-semibold text-humana-blue mb-2 mt-3 position-relative">"How can I support you in a way that feels right?"</p>
+                            <p class="text-muted small mb-0">Transfers control to the elder and opens space for them to define their own needs without assumptions.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="prompt-card p-4 shadow-sm">
+                            <p class="fw-semibold text-humana-blue mb-2 mt-3 position-relative">"Tell me about a time you felt really proud."</p>
+                            <p class="text-muted small mb-0">Memory-based conversations reinforce identity and self-worth — especially important for elders with mood struggles.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="prompt-card p-4 shadow-sm">
+                            <p class="fw-semibold text-humana-blue mb-2 mt-3 position-relative">"Is there anything on your mind lately?"</p>
+                            <p class="text-muted small mb-0">A gentle open door — keep this without agenda. If they share, just listen first before offering solutions.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="prompt-card p-4 shadow-sm">
+                            <p class="fw-semibold text-humana-blue mb-2 mt-3 position-relative">"What's one thing you'd love to do this week?"</p>
+                            <p class="text-muted small mb-0">Activates future thinking and hopefulness. Follow through on whatever they mention, even something small.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Caregiver Self-Care -->
+        <section class="py-5" style="background:#f0f8e8;">
+            <div class="container">
+                <div class="row align-items-center mb-4 g-3">
+                    <div class="col-lg-7">
+                        <h2 class="fw-bold text-humana-blue mb-1">Caregiver Self-Care Matters Too</h2>
+                        <p class="text-muted mb-0">You cannot pour from an empty cup. Managing your own wellbeing makes you a more effective, compassionate caregiver.</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="self-care-card p-4 shadow-sm">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <span style="font-size:2rem;">🧘</span>
+                                <h4 class="h6 fw-bold text-humana-blue mb-0">Daily Reset Practices</h4>
+                            </div>
+                            <ul class="text-muted small mb-0 ps-3">
+                                <li>5-minute breathing or meditation</li>
+                                <li>Short outdoor walk alone</li>
+                                <li>Journaling for 10 minutes</li>
+                                <li>Music, tea, or a quiet ritual</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="self-care-card p-4 shadow-sm">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <span style="font-size:2rem;">👥</span>
+                                <h4 class="h6 fw-bold text-humana-blue mb-0">Build a Support Network</h4>
+                            </div>
+                            <ul class="text-muted small mb-0 ps-3">
+                                <li>Identify 1–2 people to share tasks</li>
+                                <li>Join a caregiver support group</li>
+                                <li>Use respite care options</li>
+                                <li>Don't hesitate to ask for help</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="self-care-card p-4 shadow-sm">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <span style="font-size:2rem;">🎯</span>
+                                <h4 class="h6 fw-bold text-humana-blue mb-0">Set Healthy Boundaries</h4>
+                            </div>
+                            <ul class="text-muted small mb-0 ps-3">
+                                <li>Define what you can realistically do</li>
+                                <li>Communicate limits kindly but clearly</li>
+                                <li>Review and adjust as needs change</li>
+                                <li>Recognize caregiver burnout signs</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Accordion -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="fw-bold text-humana-blue text-center mb-2">Mental Health FAQs for Caregivers</h2>
+                        <p class="text-muted text-center mb-4">Common challenges and guidance for navigating mental wellness conversations.</p>
+                        <div class="accordion" id="mentalFAQ">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#mfaq1">
+                                        How do I start a conversation about depression without making it awkward?
+                                    </button>
+                                </h2>
+                                <div id="mfaq1" class="accordion-collapse collapse show" data-bs-parent="#mentalFAQ">
+                                    <div class="accordion-body text-muted small">
+                                        Approach it during a calm, private moment. Use observation rather than diagnosis: <em>"I've noticed you seem a bit low lately — is everything okay?"</em> Listen without rushing to fix. Often just being heard helps. Avoid saying "cheer up" or dismissing their feelings.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#mfaq2">
+                                        What if my elder refuses mental health help?
+                                    </button>
+                                </h2>
+                                <div id="mfaq2" class="accordion-collapse collapse" data-bs-parent="#mentalFAQ">
+                                    <div class="accordion-body text-muted small">
+                                        Resistance is common, especially in older generations where mental health stigma is higher. Frame it as a "checkup for your emotions," involve their primary care doctor who they already trust, and be patient. Forcing often backfires — gentle, consistent support matters most.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#mfaq3">
+                                        How is caregiver burnout different from regular tiredness?
+                                    </button>
+                                </h2>
+                                <div id="mfaq3" class="accordion-collapse collapse" data-bs-parent="#mentalFAQ">
+                                    <div class="accordion-body text-muted small">
+                                        Burnout includes emotional exhaustion that doesn't improve with rest, increasing resentment or emotional detachment, feeling that nothing you do is enough, and neglecting your own needs. If you're experiencing these, seek support immediately — your health matters as much as the person you care for.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#mfaq4">
+                                        Are there safe activities to improve mood at home?
+                                    </button>
+                                </h2>
+                                <div id="mfaq4" class="accordion-collapse collapse" data-bs-parent="#mentalFAQ">
+                                    <div class="accordion-body text-muted small">
+                                        Yes — gentle movement (even chair exercises), exposure to natural light, music from their era, reminiscing through old photos, simple creative tasks like coloring or crosswords, and regular social contact all have evidence-backed mood benefits for older adults.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Weekly CTA -->
+        <section class="py-5 px-3">
+            <div class="container">
+                <div class="weekly-cta p-4 p-lg-5 text-white shadow">
+                    <div class="row align-items-center g-4">
+                        <div class="col-lg-8">
+                            <span class="badge bg-white fw-semibold mb-3" style="color:var(--humana-dark-blue);">This Week's Practice</span>
+                            <h2 class="fw-bold mb-2">Try One Prompt a Day</h2>
+                            <p class="mb-0 opacity-75">Pick one conversation prompt from above and use it naturally this week. The goal isn't to have a deep talk every time — just to open the door and be present.</p>
+                        </div>
+                        <div class="col-lg-4 text-lg-end">
+                            <a href="/activities" class="btn btn-light text-humana-blue fw-semibold rounded-pill px-4 py-2">
+                                <i class="bi bi-calendar2-heart me-2"></i>Browse Activities
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Explore More -->
+        <section class="py-5" style="background:#f7fbff;">
+            <div class="container">
+                <h2 class="fw-bold text-humana-blue mb-2 text-center">Explore More Wellness Areas</h2>
+                <p class="text-muted text-center mb-4">Mental wellness is strengthened by physical activity and social belonging.</p>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-5">
+                        <a href="/physical-health" class="cross-nav-card shadow-sm">
+                            <div class="p-4 rounded-3" style="background:linear-gradient(135deg,#e8f5d8,#d0eeee);">
+                                <div class="d-flex align-items-center gap-3 mb-2">
+                                    <span style="font-size:2rem;">🏃</span>
+                                    <h4 class="h5 fw-bold text-humana-blue mb-0">Physical Health</h4>
+                                </div>
+                                <p class="text-muted small mb-0">Movement, nutrition, home safety, and daily care routines that protect independence.</p>
+                                <span class="text-humana-green small fw-semibold mt-2 d-inline-block">Learn more &rarr;</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-5">
+                        <a href="/social-connection" class="cross-nav-card shadow-sm">
+                            <div class="p-4 rounded-3" style="background:linear-gradient(135deg,#f1f5ff,#dde8f8);">
+                                <div class="d-flex align-items-center gap-3 mb-2">
+                                    <span style="font-size:2rem;">🤝</span>
+                                    <h4 class="h5 fw-bold text-humana-blue mb-0">Social Connection</h4>
+                                </div>
+                                <p class="text-muted small mb-0">Intergenerational activities and community engagement that reduce isolation.</p>
+                                <span class="text-humana-green small fw-semibold mt-2 d-inline-block">Learn more &rarr;</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
+    <!-- Footer -->
     <footer class="bg-white border-top py-4">
-        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2">
-            <span class="text-muted small">&copy; {{ year }} Generational Wellness Campaign</span>
-            <div class="small">
-                <a href="/physical-health" class="text-decoration-none me-3">Physical Health</a>
-                <a href="/social-connection" class="text-decoration-none">Social Connection</a>
+        <div class="container">
+            <div class="row align-items-center g-3">
+                <div class="col-md-4">
+                    <img src="{{ url_for('static', filename='humana_wordmark.png') }}" alt="Humana" style="height:36px;">
+                </div>
+                <div class="col-md-4 text-center">
+                    <span class="text-muted small">&copy; {{ year }} Generational Wellness &mdash; Humana Care</span>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <div class="d-flex flex-wrap gap-3 justify-content-md-end small">
+                        <a href="/" class="text-decoration-none" style="color:var(--humana-dark-blue);">Home</a>
+                        <a href="/physical-health" class="text-decoration-none" style="color:var(--humana-dark-blue);">Physical Health</a>
+                        <a href="/social-connection" class="text-decoration-none" style="color:var(--humana-dark-blue);">Social Connection</a>
+                        <a href="/activities" class="text-decoration-none" style="color:var(--humana-dark-blue);">Activities</a>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -12,99 +13,625 @@
             --humana-dark-blue: #005B68;
             --humana-dark-green: #78BE20;
             --humana-light-green: rgba(92, 154, 27, 0.1);
+            --social-purple: #6366f1;
+            --social-light: #f0f0ff;
         }
-        body { font-family: 'Inter', sans-serif; color: #333; background: #fbfcff; }
-        .text-humana-blue { color: var(--humana-dark-blue); }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; color: #333; background: #fbfcff; overflow-x: hidden; }
+
+        /* ── Navbar ── */
+        .humana-main-header {
+            background: #fff;
+            border-top: 4px solid var(--humana-green);
+            border-bottom: 1px solid #e0e0e0;
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+            min-height: 64px;
+        }
+        .humana-main-header .navbar-brand { padding: 0; display: flex; align-items: stretch; margin-top: -4px; }
+        .humana-brand-logo-container {
+            width: 65px; height: 65px; background: transparent; display: flex;
+            align-items: stretch; justify-content: center; flex-shrink: 0;
+            align-self: stretch; margin-right: 12px; overflow: hidden;
+        }
+        .humana-brand-text-image { height: 56px; width: auto; align-self: center; margin-left: 4px; }
+        .humana-main-header .nav-link {
+            color: #333; font-weight: 500; padding: 1.2rem 1rem !important;
+            font-size: 0.95rem; transition: color 0.2s; border-bottom: 3px solid transparent;
+        }
+        .humana-main-header .nav-link:hover,
+        .humana-main-header .nav-link.active {
+            color: var(--humana-dark-green);
+            border-bottom: 3px solid var(--humana-dark-green);
+        }
+
+        /* ── Utilities ── */
+        .text-humana-blue  { color: var(--humana-dark-blue); }
         .text-humana-green { color: var(--humana-green); }
-        .bg-humana-light-green { background: var(--humana-light-green); }
-        .btn-humana { background: var(--humana-green); color: #fff; border: 0; }
+        .btn-humana { background: var(--humana-green); color: #fff; border: 0; transition: background 0.2s; }
         .btn-humana:hover { background: var(--humana-dark-green); color: #fff; }
-        .hero { background: linear-gradient(130deg, #ffffff 0%, #f1f7f8 100%); border-bottom: 1px solid #e8ecef; }
-        .activity-card { background: #fff; border-radius: 1rem; border: 1px solid rgba(0,0,0,0.05); height: 100%; }
-        .checklist { background: #fff; border-radius: 1rem; border: 1px solid rgba(0,0,0,0.06); }
+        .btn-humana-outline { border: 2px solid var(--humana-green); color: var(--humana-green); background: transparent; transition: all 0.2s; }
+        .btn-humana-outline:hover { background: var(--humana-green); color: #fff; }
+
+        /* ── Hero ── */
+        .hero {
+            background: linear-gradient(135deg, #f0f1ff 0%, #d8eef0 100%);
+            border-bottom: 1px solid #c8d5e8;
+            position: relative; overflow: hidden;
+        }
+        .hero::before {
+            content: ''; position: absolute; top: -80px; right: -80px;
+            width: 350px; height: 350px;
+            background: rgba(99,102,241,0.06);
+            border-radius: 50%;
+        }
+        .hero-icon-wrap {
+            width: 160px; height: 160px;
+            background: rgba(99,102,241,0.1);
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 5rem; color: var(--social-purple);
+        }
+
+        /* ── Activity Cards ── */
+        .activity-card {
+            background: #fff; border-radius: 1rem;
+            border: 1px solid rgba(0,0,0,0.06);
+            height: 100%; transition: transform 0.2s, box-shadow 0.2s;
+            overflow: hidden;
+        }
+        .activity-card:hover { transform: translateY(-4px); box-shadow: 0 12px 28px rgba(0,0,0,0.1) !important; }
+        .activity-card-header {
+            padding: 1.2rem 1.25rem .8rem;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+        .activity-icon {
+            width: 52px; height: 52px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.5rem; flex-shrink: 0;
+        }
+
+        /* ── Checklist ── */
+        .checklist-item {
+            background: #fff; border-radius: .9rem;
+            border: 1px solid rgba(0,0,0,0.06);
+            transition: box-shadow 0.2s;
+            cursor: pointer;
+        }
+        .checklist-item:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
+        .checklist-item input[type="checkbox"] {
+            width: 22px; height: 22px; accent-color: var(--humana-green);
+            cursor: pointer; flex-shrink: 0; margin-top: 2px;
+        }
+        .checklist-item label { cursor: pointer; }
+        .checklist-item.checked { background: rgba(92,154,27,0.06); border-color: rgba(92,154,27,0.2); }
+        .checklist-item.checked label { text-decoration: line-through; color: #888; }
+
+        /* ── Ideas Gallery ── */
+        .idea-pill {
+            display: inline-flex; align-items: center; gap: .4rem;
+            background: #fff; border: 1px solid rgba(0,0,0,0.08);
+            border-radius: 2rem; padding: .4rem 1rem;
+            font-size: .85rem; transition: all 0.2s;
+        }
+        .idea-pill:hover { background: var(--humana-light-green); border-color: var(--humana-green); color: var(--humana-green); }
+
+        /* ── CTA ── */
+        .weekly-cta {
+            background: linear-gradient(135deg, var(--humana-dark-blue) 0%, #007a8a 100%);
+            border-radius: 1.25rem;
+        }
+
+        /* ── Accordion ── */
+        .accordion-button:not(.collapsed) {
+            background: var(--social-light); color: var(--humana-dark-blue); box-shadow: none;
+        }
+        .accordion-button:focus { box-shadow: none; }
+        .accordion-item { border: 1px solid rgba(0,0,0,0.08); border-radius: .75rem !important; margin-bottom: .5rem; overflow: hidden; }
+
+        /* ── Cross-nav ── */
+        .cross-nav-card {
+            border-radius: 1rem; border: none;
+            text-decoration: none; display: block;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .cross-nav-card:hover { transform: translateY(-4px); box-shadow: 0 12px 28px rgba(0,0,0,0.12); }
+
+        /* ── Footer ── */
+        footer a { color: var(--humana-dark-blue); }
+        footer a:hover { color: var(--humana-green); }
+
+        /* ── Responsive ── */
+        @media (max-width: 991px) {
+            .hero-icon-wrap { width: 110px; height: 110px; font-size: 3.5rem; }
+            .humana-brand-logo-container { width: 50px; height: 50px; }
+            .humana-brand-text-image { height: 42px; }
+        }
+        @media (max-width: 575px) {
+            .hero-icon-wrap { display: none; }
+        }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold text-humana-blue" href="/">Generational Wellness</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain"><span class="navbar-toggler-icon"></span></button>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg humana-main-header sticky-top">
+        <div class="container-fluid px-2 px-lg-5">
+            <a class="navbar-brand d-flex align-items-stretch" href="/">
+                <div class="humana-brand-logo-container">
+                    <img src="{{ url_for('static', filename='humana_logo.png') }}" alt="Humana Logo"
+                        style="width:100%;height:100%;object-fit:cover;display:block;">
+                </div>
+                <img src="{{ url_for('static', filename='humana_wordmark.png') }}" alt="Humana"
+                    class="humana-brand-text-image">
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navMain">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="/physical-health">Physical</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/mental-health">Mental</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="/social-connection">Social</a></li>
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="/physical-health">Physical Health</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/mental-health">Mental Health</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/social-connection">Social Connection</a></li>
                     <li class="nav-item"><a class="nav-link" href="/activities">Activities</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-humana rounded-pill px-4" href="/activities">Explore &rarr;</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <!-- Hero -->
     <header class="hero py-5">
-        <div class="container py-4">
+        <div class="container py-3 py-lg-4">
             <div class="row align-items-center g-4">
                 <div class="col-lg-8">
-                    <span class="badge bg-humana-light-green text-humana-green rounded-pill px-3 py-2 mb-3">Social Connection Across Generations</span>
-                    <h1 class="display-5 fw-bold text-humana-blue">Connection is care: shared time helps older adults feel valued and less isolated.</h1>
-                    <p class="lead text-muted mt-3">Simple social moments—calls, stories, games, and community events—can strengthen emotional wellness for both teens and elders.</p>
-                    <a class="btn btn-humana rounded-pill px-4 mt-2" href="#connection-checklist">Start the connection checklist</a>
+                    <span class="badge rounded-pill px-3 py-2 mb-3 fw-semibold"
+                        style="background:rgba(99,102,241,0.12);color:var(--social-purple);">
+                        <i class="bi bi-people me-1"></i> Social Connection Across Generations
+                    </span>
+                    <h1 class="fw-bold text-humana-blue mb-3" style="font-size:clamp(1.8rem,4vw,2.8rem);line-height:1.2;">
+                        Connection is care: shared time helps older adults feel valued and less isolated.
+                    </h1>
+                    <p class="lead text-muted mb-4" style="max-width:600px;">
+                        Simple social moments — calls, stories, games, and community events — can strengthen emotional wellness and build lasting bonds across generations.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a class="btn btn-humana rounded-pill px-4 py-2" href="#activities-section">
+                            <i class="bi bi-stars me-1"></i> See Activities
+                        </a>
+                        <a class="btn btn-humana-outline rounded-pill px-4 py-2" href="#connection-checklist">
+                            <i class="bi bi-list-check me-1"></i> Weekly Checklist
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center d-none d-lg-flex justify-content-center">
+                    <div class="hero-icon-wrap">
+                        <i class="bi bi-people-fill"></i>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <main class="py-5">
+    <!-- Impact Bar -->
+    <section class="py-3 border-bottom bg-white">
         <div class="container">
-            <h2 class="h3 fw-bold text-humana-blue mb-4">Intergenerational Activities That Build Belonging</h2>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-3">
-                    <div class="activity-card p-4 shadow-sm">
-                        <h3 class="h6 fw-bold text-humana-blue">Story Swap</h3>
-                        <p class="text-muted small mb-0">Record a short “memory interview.” Ask about first job, favorite music, or family traditions.</p>
+            <div class="row g-3 text-center">
+                <div class="col-6 col-md-3">
+                    <div class="py-2 px-3" style="background:var(--social-light);border-radius:.75rem;">
+                        <div class="fw-bold fs-5" style="color:var(--social-purple);">43%</div>
+                        <div class="text-muted small">of older adults feel lonely regularly</div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="activity-card p-4 shadow-sm">
-                        <h3 class="h6 fw-bold text-humana-blue">Tech Buddy Time</h3>
-                        <p class="text-muted small mb-0">Teach one digital skill each week: video calling, photo sharing, reminders, or scam awareness basics.</p>
+                <div class="col-6 col-md-3">
+                    <div class="py-2 px-3" style="background:rgba(92,154,27,0.08);border-radius:.75rem;">
+                        <div class="fw-bold fs-5" style="color:var(--humana-green);">2x</div>
+                        <div class="text-muted small">longer life with strong social ties</div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="activity-card p-4 shadow-sm">
-                        <h3 class="h6 fw-bold text-humana-blue">Community Together</h3>
-                        <p class="text-muted small mb-0">Attend local events, faith gatherings, or community center programs to increase social participation.</p>
+                <div class="col-6 col-md-3">
+                    <div class="py-2 px-3" style="background:rgba(0,91,104,0.08);border-radius:.75rem;">
+                        <div class="fw-bold fs-5 text-humana-blue">Daily</div>
+                        <div class="text-muted small">connection reduces depression risk</div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="activity-card p-4 shadow-sm">
-                        <h3 class="h6 fw-bold text-humana-blue">Shared Hobby Hour</h3>
-                        <p class="text-muted small mb-0">Try gardening, board games, cooking, or music practice. Focus on enjoyment, not performance.</p>
+                <div class="col-6 col-md-3">
+                    <div class="py-2 px-3" style="background:rgba(240,180,41,0.12);border-radius:.75rem;">
+                        <div class="fw-bold fs-5" style="color:#b07d00;">Both</div>
+                        <div class="text-muted small">generations benefit from bonding</div>
                     </div>
                 </div>
             </div>
-
-            <section id="connection-checklist" class="checklist p-4 p-lg-5 mt-5 shadow-sm">
-                <h2 class="h4 fw-bold text-humana-blue">Weekly Connection Checklist</h2>
-                <ul class="mb-0 text-muted">
-                    <li>One in-person or video conversation focused on listening.</li>
-                    <li>One shared activity that includes movement or creativity.</li>
-                    <li>One social touchpoint with neighbors, family, or community group.</li>
-                    <li>One gratitude message: “I’m glad we did this together.”</li>
-                </ul>
-            </section>
         </div>
+    </section>
+
+    <main>
+
+        <!-- Intergenerational Activities -->
+        <section id="activities-section" class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold text-humana-blue">Intergenerational Activities That Build Belonging</h2>
+                    <p class="text-muted mx-auto" style="max-width:540px;">Choose activities based on what feels natural — the connection matters more than perfection.</p>
+                </div>
+                <div class="row g-4">
+                    <!-- Story Swap -->
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="activity-card shadow-sm">
+                            <div class="activity-card-header d-flex align-items-center gap-3">
+                                <div class="activity-icon" style="background:rgba(99,102,241,0.12);">
+                                    <i class="bi bi-chat-quote" style="color:var(--social-purple);"></i>
+                                </div>
+                                <h3 class="h5 text-humana-blue fw-bold mb-0">Story Swap</h3>
+                            </div>
+                            <div class="p-3">
+                                <p class="text-muted small mb-3">Record a short "memory interview." Ask about first jobs, favorite music from the past, family traditions, or the biggest change they've witnessed in their lifetime.</p>
+                                <div class="small text-muted">
+                                    <div class="mb-1"><i class="bi bi-clock me-1 text-humana-green"></i>20–30 minutes</div>
+                                    <div class="mb-1"><i class="bi bi-house me-1 text-humana-green"></i>Indoors</div>
+                                    <div><i class="bi bi-battery-half me-1 text-humana-green"></i>Low energy</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tech Buddy -->
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="activity-card shadow-sm">
+                            <div class="activity-card-header d-flex align-items-center gap-3">
+                                <div class="activity-icon" style="background:rgba(92,154,27,0.12);">
+                                    <i class="bi bi-laptop" style="color:var(--humana-green);"></i>
+                                </div>
+                                <h3 class="h5 text-humana-blue fw-bold mb-0">Tech Buddy Time</h3>
+                            </div>
+                            <div class="p-3">
+                                <p class="text-muted small mb-3">Teach one digital skill each week — video calling, photo sharing, calendar reminders, or online safety basics. Keep sessions short and celebrate every win.</p>
+                                <div class="small text-muted">
+                                    <div class="mb-1"><i class="bi bi-clock me-1 text-humana-green"></i>15–20 minutes</div>
+                                    <div class="mb-1"><i class="bi bi-house me-1 text-humana-green"></i>Indoors</div>
+                                    <div><i class="bi bi-battery-half me-1 text-humana-green"></i>Low energy</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Community Together -->
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="activity-card shadow-sm">
+                            <div class="activity-card-header d-flex align-items-center gap-3">
+                                <div class="activity-icon" style="background:rgba(0,91,104,0.1);">
+                                    <i class="bi bi-building" style="color:var(--humana-dark-blue);"></i>
+                                </div>
+                                <h3 class="h5 text-humana-blue fw-bold mb-0">Community Together</h3>
+                            </div>
+                            <div class="p-3">
+                                <p class="text-muted small mb-3">Attend local events, faith gatherings, or senior center programs together. Even as an escort, your presence makes elders feel less vulnerable and more confident.</p>
+                                <div class="small text-muted">
+                                    <div class="mb-1"><i class="bi bi-clock me-1 text-humana-green"></i>1–2 hours</div>
+                                    <div class="mb-1"><i class="bi bi-map me-1 text-humana-green"></i>Outdoors/Local</div>
+                                    <div><i class="bi bi-battery-full me-1 text-humana-green"></i>Varies</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Shared Hobby -->
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="activity-card shadow-sm">
+                            <div class="activity-card-header d-flex align-items-center gap-3">
+                                <div class="activity-icon" style="background:rgba(240,180,41,0.15);">
+                                    <i class="bi bi-palette" style="color:#b07d00;"></i>
+                                </div>
+                                <h3 class="h5 text-humana-blue fw-bold mb-0">Shared Hobby Hour</h3>
+                            </div>
+                            <div class="p-3">
+                                <p class="text-muted small mb-3">Try gardening, board games, cooking, or music practice. Focus entirely on enjoyment and conversation — not performance or outcomes.</p>
+                                <div class="small text-muted">
+                                    <div class="mb-1"><i class="bi bi-clock me-1 text-humana-green"></i>30–60 minutes</div>
+                                    <div class="mb-1"><i class="bi bi-house me-1 text-humana-green"></i>Flexible</div>
+                                    <div><i class="bi bi-battery-half me-1 text-humana-green"></i>Low–Moderate</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Ideas Gallery -->
+        <section class="py-4" style="background:#f0f8e8;">
+            <div class="container">
+                <h3 class="h5 fw-bold text-humana-blue mb-3 text-center">More Quick Connection Ideas</h3>
+                <div class="d-flex flex-wrap gap-2 justify-content-center">
+                    <span class="idea-pill"><i class="bi bi-music-note"></i> Sing a song together</span>
+                    <span class="idea-pill"><i class="bi bi-book"></i> Read aloud from a book</span>
+                    <span class="idea-pill"><i class="bi bi-camera"></i> Look through old photos</span>
+                    <span class="idea-pill"><i class="bi bi-cup-hot"></i> Share a meal or tea</span>
+                    <span class="idea-pill"><i class="bi bi-controller"></i> Play a board or card game</span>
+                    <span class="idea-pill"><i class="bi bi-flower1"></i> Garden or tend houseplants</span>
+                    <span class="idea-pill"><i class="bi bi-envelope-heart"></i> Write letters together</span>
+                    <span class="idea-pill"><i class="bi bi-film"></i> Watch a classic film</span>
+                    <span class="idea-pill"><i class="bi bi-geo-alt"></i> Visit a farmers market</span>
+                    <span class="idea-pill"><i class="bi bi-brush"></i> Draw or color together</span>
+                    <span class="idea-pill"><i class="bi bi-stars"></i> Stargaze at night</span>
+                    <span class="idea-pill"><i class="bi bi-puzzle"></i> Work on a jigsaw puzzle</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- When to Seek More Connection -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row g-5 align-items-start">
+                    <div class="col-lg-6">
+                        <h2 class="fw-bold text-humana-blue mb-3">Signs an Elder May Need More Social Support</h2>
+                        <p class="text-muted mb-4">Social isolation is a health risk equal to smoking 15 cigarettes a day. Recognize the warning signs early.</p>
+                        <div class="d-flex flex-column gap-3">
+                            <div class="d-flex align-items-start gap-3 bg-white rounded-3 p-3 border shadow-sm">
+                                <i class="bi bi-exclamation-circle-fill text-warning fs-4 flex-shrink-0 mt-1"></i>
+                                <div>
+                                    <div class="fw-semibold text-humana-blue small">Declining invitations consistently</div>
+                                    <div class="text-muted small">Repeated refusals to join family events, calls, or outings they previously enjoyed.</div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start gap-3 bg-white rounded-3 p-3 border shadow-sm">
+                                <i class="bi bi-exclamation-circle-fill text-warning fs-4 flex-shrink-0 mt-1"></i>
+                                <div>
+                                    <div class="fw-semibold text-humana-blue small">Spending most of the day alone</div>
+                                    <div class="text-muted small">Limited meaningful interaction with others — not just preference for quiet, but true isolation.</div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start gap-3 bg-white rounded-3 p-3 border shadow-sm">
+                                <i class="bi bi-exclamation-circle-fill text-warning fs-4 flex-shrink-0 mt-1"></i>
+                                <div>
+                                    <div class="fw-semibold text-humana-blue small">Expressing loneliness or feeling forgotten</div>
+                                    <div class="text-muted small">Direct statements or indirect hints like "nobody visits anymore" or "I don't matter."</div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start gap-3 bg-white rounded-3 p-3 border shadow-sm">
+                                <i class="bi bi-exclamation-circle-fill text-warning fs-4 flex-shrink-0 mt-1"></i>
+                                <div>
+                                    <div class="fw-semibold text-humana-blue small">Loss of interest in previously loved activities</div>
+                                    <div class="text-muted small">Stopped calling friends, attending church, playing cards, or engaging in lifelong hobbies.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <h2 class="fw-bold text-humana-blue mb-3">Connection FAQ</h2>
+                        <div class="accordion" id="socialFAQ">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#sfaq1">
+                                        What if my elder doesn't want to "do activities"?
+                                    </button>
+                                </h2>
+                                <div id="sfaq1" class="accordion-collapse collapse show" data-bs-parent="#socialFAQ">
+                                    <div class="accordion-body text-muted small">
+                                        Start small, even sitting together in silence counts. Presence, not programs, is what matters. Try sharing a cup of tea, watching their favorite show together, or simply asking about their day. Build trust before suggesting structured activities.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#sfaq2">
+                                        How often should I visit or call?
+                                    </button>
+                                </h2>
+                                <div id="sfaq2" class="accordion-collapse collapse" data-bs-parent="#socialFAQ">
+                                    <div class="accordion-body text-muted small">
+                                        Quality over quantity. A 20-minute focused conversation where you're fully present is worth more than an hour of distracted presence. Aim for at least one meaningful interaction daily, even a short call or text. Consistency matters most.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#sfaq3">
+                                        How can I involve other family members or friends?
+                                    </button>
+                                </h2>
+                                <div id="sfaq3" class="accordion-collapse collapse" data-bs-parent="#socialFAQ">
+                                    <div class="accordion-body text-muted small">
+                                        Create a simple shared schedule, even a rotating "who calls grandma on Tuesday" approach works. Group video calls, shared photo albums, and family messaging groups keep elders feeling included without requiring everyone to be physically present.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#sfaq4">
+                                        Are community senior programs worth it?
+                                    </button>
+                                </h2>
+                                <div id="sfaq4" class="accordion-collapse collapse" data-bs-parent="#socialFAQ">
+                                    <div class="accordion-body text-muted small">
+                                        Absolutely. Senior centers, faith communities, volunteer programs, and adult day programs offer structured social time with peers. Many offer transportation assistance. Even attending once a week can dramatically reduce isolation and provide mental stimulation.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Weekly Checklist -->
+        <section id="connection-checklist" class="py-5" style="background:#f7f0ff;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-7">
+                        <div class="text-center mb-4">
+                            <h2 class="fw-bold text-humana-blue">Weekly Connection Checklist</h2>
+                            <p class="text-muted">Check off each goal as you accomplish it this week. Small steps add up.</p>
+                        </div>
+                        <form id="checklistForm">
+                            <div class="d-flex flex-column gap-3" id="checklist">
+                                <div class="checklist-item p-3 shadow-sm d-flex align-items-start gap-3" onclick="toggleCheck(this)">
+                                    <input type="checkbox" id="c1" class="mt-1" name="checklist-item">
+                                    <label for="c1">
+                                        <div class="fw-semibold text-humana-blue small">One focused conversation</div>
+                                        <div class="text-muted small">An in-person or video call focused entirely on listening — no distractions, no multitasking.</div>
+                                    </label>
+                                </div>
+                                <div class="checklist-item p-3 shadow-sm d-flex align-items-start gap-3" onclick="toggleCheck(this)">
+                                    <input type="checkbox" id="c2" class="mt-1" name="checklist-item">
+                                    <label for="c2">
+                                        <div class="fw-semibold text-humana-blue small">One shared activity</div>
+                                        <div class="text-muted small">A shared activity that includes movement or creativity — walk, cook, draw, or make music together.</div>
+                                    </label>
+                                </div>
+                                <div class="checklist-item p-3 shadow-sm d-flex align-items-start gap-3" onclick="toggleCheck(this)">
+                                    <input type="checkbox" id="c3" class="mt-1" name="checklist-item">
+                                    <label for="c3">
+                                        <div class="fw-semibold text-humana-blue small">One community touchpoint</div>
+                                        <div class="text-muted small">Facilitate a social interaction with neighbors, a faith group, or local community event.</div>
+                                    </label>
+                                </div>
+                                <div class="checklist-item p-3 shadow-sm d-flex align-items-start gap-3" onclick="toggleCheck(this)">
+                                    <input type="checkbox" id="c4" class="mt-1" name="checklist-item">
+                                    <label for="c4">
+                                        <div class="fw-semibold text-humana-blue small">One gratitude moment</div>
+                                        <div class="text-muted small">Tell your elder one thing you appreciate about them — or invite them to share a memory they're proud of.</div>
+                                    </label>
+                                </div>
+                                <div class="checklist-item p-3 shadow-sm d-flex align-items-start gap-3" onclick="toggleCheck(this)">
+                                    <input type="checkbox" id="c5" class="mt-1" name="checklist-item">
+                                    <label for="c5">
+                                        <div class="fw-semibold text-humana-blue small">Check in on isolation signals</div>
+                                        <div class="text-muted small">Ask gently: "Have you talked to anyone else this week?" — note if patterns of withdrawal are emerging.</div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div id="checklist-message" class="text-center mt-4 fw-semibold text-humana-green d-none">
+                                <i class="bi bi-stars me-2"></i>Amazing week of connection! You're making a real difference.
+                            </div>
+                            <div class="text-center mt-4">
+                                <button class="btn btn-humana rounded-pill px-4" type="submit">Submit Report</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Weekly CTA -->
+        <section class="py-5 px-3">
+            <div class="container">
+                <div class="weekly-cta p-4 p-lg-5 text-white shadow">
+                    <div class="row align-items-center g-4">
+                        <div class="col-lg-8">
+                            <span class="badge bg-white fw-semibold mb-3" style="color:var(--humana-dark-blue);">Start This Week</span>
+                            <h2 class="fw-bold mb-2">Pick One Activity &amp; Do It Today</h2>
+                            <p class="mb-0 opacity-75">You don't need a plan — you just need to start. Call, visit, or sit together. The most powerful thing you can offer an older adult is your undivided presence.</p>
+                        </div>
+                        <div class="col-lg-4 text-lg-end">
+                            <a href="/activities" class="btn btn-light text-humana-blue fw-semibold rounded-pill px-4 py-2">
+                                <i class="bi bi-calendar2-event me-2"></i>Find an Activity
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Explore More -->
+        <section class="py-5" style="background:#fbfcff;">
+            <div class="container">
+                <h2 class="fw-bold text-humana-blue mb-2 text-center">Explore More Wellness Areas</h2>
+                <p class="text-muted text-center mb-4">Social connection is most powerful when paired with physical and mental wellness.</p>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-5">
+                        <a href="/physical-health" class="cross-nav-card shadow-sm">
+                            <div class="p-4 rounded-3" style="background:linear-gradient(135deg,#e8f5d8,#d0eeee);">
+                                <div class="d-flex align-items-center gap-3 mb-2">
+                                    <span style="font-size:2rem;">🏃</span>
+                                    <h4 class="h5 fw-bold text-humana-blue mb-0">Physical Health</h4>
+                                </div>
+                                <p class="text-muted small mb-0">Daily movement, nutrition, home safety, and care routines that maintain independence.</p>
+                                <span class="text-humana-green small fw-semibold mt-2 d-inline-block">Learn more &rarr;</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-5">
+                        <a href="/mental-health" class="cross-nav-card shadow-sm">
+                            <div class="p-4 rounded-3" style="background:linear-gradient(135deg,#e8f0ff,#d8eef0);">
+                                <div class="d-flex align-items-center gap-3 mb-2">
+                                    <span style="font-size:2rem;">🧠</span>
+                                    <h4 class="h5 fw-bold text-humana-blue mb-0">Mental Health</h4>
+                                </div>
+                                <p class="text-muted small mb-0">Emotional wellness, conversation strategies, and caregiver self-care practices.</p>
+                                <span class="text-humana-green small fw-semibold mt-2 d-inline-block">Learn more &rarr;</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
+    <!-- Footer -->
     <footer class="bg-white border-top py-4">
-        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2">
-            <span class="text-muted small">&copy; {{ year }} Generational Wellness Campaign</span>
-            <div class="small">
-                <a href="/physical-health" class="text-decoration-none me-3">Physical Health</a>
-                <a href="/mental-health" class="text-decoration-none">Mental Health</a>
+        <div class="container">
+            <div class="row align-items-center g-3">
+                <div class="col-md-4">
+                    <img src="{{ url_for('static', filename='humana_wordmark.png') }}" alt="Humana" style="height:36px;">
+                </div>
+                <div class="col-md-4 text-center">
+                    <span class="text-muted small">&copy; {{ year }} Generational Wellness &mdash; Humana Care</span>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <div class="d-flex flex-wrap gap-3 justify-content-md-end small">
+                        <a href="/" class="text-decoration-none" style="color:var(--humana-dark-blue);">Home</a>
+                        <a href="/physical-health" class="text-decoration-none" style="color:var(--humana-dark-blue);">Physical Health</a>
+                        <a href="/mental-health" class="text-decoration-none" style="color:var(--humana-dark-blue);">Mental Health</a>
+                        <a href="/activities" class="text-decoration-none" style="color:var(--humana-dark-blue);">Activities</a>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleCheck(item) {
+            const cb = item.querySelector('input[type="checkbox"]');
+            cb.checked = !cb.checked;
+            item.classList.toggle('checked', cb.checked);
+            const total = document.querySelectorAll('.checklist-item').length;
+            const checked = document.querySelectorAll('.checklist-item.checked').length;
+            const msg = document.getElementById('checklist-message');
+            msg.classList.toggle('d-none', checked < total);
+        }
+
+        document.getElementById('checklistForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const checklist = document.querySelectorAll('.checklist-item');
+            const items = [];
+            const tasks = ['One focused conversation', 'One shared activity', 'One community touchpoint', 'One gratitude moment', 'Check in on isolation signals'];
+            let completed = 0;
+
+            checklist.forEach((item, index) => {
+                const cb = item.querySelector('input[type="checkbox"]');
+                if (cb.checked) {
+                    items.push('✓ ' + tasks[index]);
+                    completed++;
+                }
+            });
+
+            const today = new Date().toLocaleDateString();
+            const report = `Weekly Connection Checklist Report\n${'='.repeat(40)}\nDate: ${today}\n\nCompleted Tasks (${completed}/5):\n${items.join('\n') || 'No tasks completed yet'}\n\nProgress: ${Math.round((completed/5)*100)}`;
+
+            const blob = new Blob([report], {type: 'text/plain'});
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `Connection-Checklist-${today.replace(/\//g, '-')}.txt`;
+            document.body.appendChild(a);
+            a.click();
+            window.URL.revokeObjectURL(url);
+            document.body.removeChild(a);
+        });
+    </script>
 </body>
 </html>
