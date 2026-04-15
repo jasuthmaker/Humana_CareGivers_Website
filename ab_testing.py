@@ -17,12 +17,10 @@ import os
 from datetime import datetime
 from collections import defaultdict
 
-# ── Storage (file-based, no DB needed) ──────────────────────
+
 DATA_FILE = "ab_results.json"
 
-# ── Experiment Config ────────────────────────────────────────
-# Define your experiments here.
-# Each experiment has a name, two variants, and what's being tested.
+
 EXPERIMENTS = {
     "hero_cta_button": {
         "description": "Test CTA button text on homepage",

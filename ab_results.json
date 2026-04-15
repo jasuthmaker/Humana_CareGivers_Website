@@ -1,0 +1,5918 @@
+{
+  "hero_cta_button": {
+    "A": {
+      "impression": 97,
+      "click": 41,
+      "conversion": 18
+    },
+    "B": {
+      "impression": 103,
+      "click": 39,
+      "conversion": 19
+    },
+    "events": [
+      {
+        "user_id": "user_0",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:52.886814"
+      },
+      {
+        "user_id": "user_0",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:52.886814"
+      },
+      {
+        "user_id": "user_1",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:52.886814"
+      },
+      {
+        "user_id": "user_1",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:52.886814"
+      },
+      {
+        "user_id": "user_2",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:52.904353"
+      },
+      {
+        "user_id": "user_2",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:52.905405"
+      },
+      {
+        "user_id": "user_2",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:52.906398"
+      },
+      {
+        "user_id": "user_3",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:52.908930"
+      },
+      {
+        "user_id": "user_3",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:52.909947"
+      },
+      {
+        "user_id": "user_4",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:52.909947"
+      },
+      {
+        "user_id": "user_4",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:52.909947"
+      },
+      {
+        "user_id": "user_5",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:52.922932"
+      },
+      {
+        "user_id": "user_6",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:52.922932"
+      },
+      {
+        "user_id": "user_7",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:52.935288"
+      },
+      {
+        "user_id": "user_7",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:52.935288"
+      },
+      {
+        "user_id": "user_7",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:52.935288"
+      },
+      {
+        "user_id": "user_8",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:52.935288"
+      },
+      {
+        "user_id": "user_8",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:52.951424"
+      },
+      {
+        "user_id": "user_9",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:52.954519"
+      },
+      {
+        "user_id": "user_9",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:52.954519"
+      },
+      {
+        "user_id": "user_10",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:52.971380"
+      },
+      {
+        "user_id": "user_10",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:52.973443"
+      },
+      {
+        "user_id": "user_11",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:52.980463"
+      },
+      {
+        "user_id": "user_11",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:52.982471"
+      },
+      {
+        "user_id": "user_12",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:52.990333"
+      },
+      {
+        "user_id": "user_12",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:52.992228"
+      },
+      {
+        "user_id": "user_13",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.003267"
+      },
+      {
+        "user_id": "user_14",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.010263"
+      },
+      {
+        "user_id": "user_15",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.017272"
+      },
+      {
+        "user_id": "user_15",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.017272"
+      },
+      {
+        "user_id": "user_16",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.017272"
+      },
+      {
+        "user_id": "user_16",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.017272"
+      },
+      {
+        "user_id": "user_17",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.042430"
+      },
+      {
+        "user_id": "user_17",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.044445"
+      },
+      {
+        "user_id": "user_18",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.050721"
+      },
+      {
+        "user_id": "user_19",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.065467"
+      },
+      {
+        "user_id": "user_20",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.084250"
+      },
+      {
+        "user_id": "user_20",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:53.086686"
+      },
+      {
+        "user_id": "user_20",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.090728"
+      },
+      {
+        "user_id": "user_21",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.098084"
+      },
+      {
+        "user_id": "user_22",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.103192"
+      },
+      {
+        "user_id": "user_23",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.124502"
+      },
+      {
+        "user_id": "user_24",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.134654"
+      },
+      {
+        "user_id": "user_24",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:53.134654"
+      },
+      {
+        "user_id": "user_24",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.134654"
+      },
+      {
+        "user_id": "user_25",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.158432"
+      },
+      {
+        "user_id": "user_25",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:53.160441"
+      },
+      {
+        "user_id": "user_26",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.168014"
+      },
+      {
+        "user_id": "user_27",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.185654"
+      },
+      {
+        "user_id": "user_28",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.185654"
+      },
+      {
+        "user_id": "user_28",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.200914"
+      },
+      {
+        "user_id": "user_29",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.212534"
+      },
+      {
+        "user_id": "user_29",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.220632"
+      },
+      {
+        "user_id": "user_30",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.222324"
+      },
+      {
+        "user_id": "user_31",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.234835"
+      },
+      {
+        "user_id": "user_32",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.251186"
+      },
+      {
+        "user_id": "user_32",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:53.251186"
+      },
+      {
+        "user_id": "user_33",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.268598"
+      },
+      {
+        "user_id": "user_34",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.284477"
+      },
+      {
+        "user_id": "user_35",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.293370"
+      },
+      {
+        "user_id": "user_36",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.305661"
+      },
+      {
+        "user_id": "user_36",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:53.309692"
+      },
+      {
+        "user_id": "user_36",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.313725"
+      },
+      {
+        "user_id": "user_37",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.317764"
+      },
+      {
+        "user_id": "user_37",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.334770"
+      },
+      {
+        "user_id": "user_38",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.349510"
+      },
+      {
+        "user_id": "user_39",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.361616"
+      },
+      {
+        "user_id": "user_39",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:53.361616"
+      },
+      {
+        "user_id": "user_40",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.377770"
+      },
+      {
+        "user_id": "user_41",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.407729"
+      },
+      {
+        "user_id": "user_42",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.417082"
+      },
+      {
+        "user_id": "user_42",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.421111"
+      },
+      {
+        "user_id": "user_43",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.434136"
+      },
+      {
+        "user_id": "user_43",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:53.434136"
+      },
+      {
+        "user_id": "user_44",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.470832"
+      },
+      {
+        "user_id": "user_45",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.487351"
+      },
+      {
+        "user_id": "user_46",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.498240"
+      },
+      {
+        "user_id": "user_47",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.513735"
+      },
+      {
+        "user_id": "user_48",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.535760"
+      },
+      {
+        "user_id": "user_48",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.535760"
+      },
+      {
+        "user_id": "user_49",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.551352"
+      },
+      {
+        "user_id": "user_49",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:53.560844"
+      },
+      {
+        "user_id": "user_50",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.574836"
+      },
+      {
+        "user_id": "user_51",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.584970"
+      },
+      {
+        "user_id": "user_51",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:53.584970"
+      },
+      {
+        "user_id": "user_52",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.622463"
+      },
+      {
+        "user_id": "user_52",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.622463"
+      },
+      {
+        "user_id": "user_53",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.644467"
+      },
+      {
+        "user_id": "user_53",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:53.653129"
+      },
+      {
+        "user_id": "user_54",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.672321"
+      },
+      {
+        "user_id": "user_55",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.691325"
+      },
+      {
+        "user_id": "user_56",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.724286"
+      },
+      {
+        "user_id": "user_57",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.763742"
+      },
+      {
+        "user_id": "user_57",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.770506"
+      },
+      {
+        "user_id": "user_58",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.812006"
+      },
+      {
+        "user_id": "user_58",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.817487"
+      },
+      {
+        "user_id": "user_59",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.859589"
+      },
+      {
+        "user_id": "user_60",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.877097"
+      },
+      {
+        "user_id": "user_60",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.881475"
+      },
+      {
+        "user_id": "user_61",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.917519"
+      },
+      {
+        "user_id": "user_61",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:53.917519"
+      },
+      {
+        "user_id": "user_62",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.953324"
+      },
+      {
+        "user_id": "user_63",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.980906"
+      },
+      {
+        "user_id": "user_64",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.005912"
+      },
+      {
+        "user_id": "user_64",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:54.008688"
+      },
+      {
+        "user_id": "user_65",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.034727"
+      },
+      {
+        "user_id": "user_65",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:54.043018"
+      },
+      {
+        "user_id": "user_66",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.060262"
+      },
+      {
+        "user_id": "user_66",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:54.069709"
+      },
+      {
+        "user_id": "user_66",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:54.075757"
+      },
+      {
+        "user_id": "user_67",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.097545"
+      },
+      {
+        "user_id": "user_68",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.135741"
+      },
+      {
+        "user_id": "user_68",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:54.139770"
+      },
+      {
+        "user_id": "user_68",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:54.146224"
+      },
+      {
+        "user_id": "user_69",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.159467"
+      },
+      {
+        "user_id": "user_70",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.191311"
+      },
+      {
+        "user_id": "user_71",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.249058"
+      },
+      {
+        "user_id": "user_71",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:54.263011"
+      },
+      {
+        "user_id": "user_71",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:54.269868"
+      },
+      {
+        "user_id": "user_72",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.298751"
+      },
+      {
+        "user_id": "user_72",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:54.316730"
+      },
+      {
+        "user_id": "user_72",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:54.316730"
+      },
+      {
+        "user_id": "user_73",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.346598"
+      },
+      {
+        "user_id": "user_73",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:54.346598"
+      },
+      {
+        "user_id": "user_74",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.381522"
+      },
+      {
+        "user_id": "user_75",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.409490"
+      },
+      {
+        "user_id": "user_75",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:54.419936"
+      },
+      {
+        "user_id": "user_76",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.458096"
+      },
+      {
+        "user_id": "user_77",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.472923"
+      },
+      {
+        "user_id": "user_78",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.504484"
+      },
+      {
+        "user_id": "user_79",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.543108"
+      },
+      {
+        "user_id": "user_79",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:54.547163"
+      },
+      {
+        "user_id": "user_80",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.572319"
+      },
+      {
+        "user_id": "user_81",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.584631"
+      },
+      {
+        "user_id": "user_82",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.613255"
+      },
+      {
+        "user_id": "user_83",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.637070"
+      },
+      {
+        "user_id": "user_84",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.659027"
+      },
+      {
+        "user_id": "user_85",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.731553"
+      },
+      {
+        "user_id": "user_85",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:54.740147"
+      },
+      {
+        "user_id": "user_85",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:54.749756"
+      },
+      {
+        "user_id": "user_86",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.774455"
+      },
+      {
+        "user_id": "user_87",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.806578"
+      },
+      {
+        "user_id": "user_88",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.859300"
+      },
+      {
+        "user_id": "user_88",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:54.865291"
+      },
+      {
+        "user_id": "user_89",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.898970"
+      },
+      {
+        "user_id": "user_89",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:54.898970"
+      },
+      {
+        "user_id": "user_90",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.934117"
+      },
+      {
+        "user_id": "user_90",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:54.934117"
+      },
+      {
+        "user_id": "user_90",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:54.951554"
+      },
+      {
+        "user_id": "user_91",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.983865"
+      },
+      {
+        "user_id": "user_91",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:54.988975"
+      },
+      {
+        "user_id": "user_92",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.017414"
+      },
+      {
+        "user_id": "user_93",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.034238"
+      },
+      {
+        "user_id": "user_93",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:55.050799"
+      },
+      {
+        "user_id": "user_94",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.090503"
+      },
+      {
+        "user_id": "user_95",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.116993"
+      },
+      {
+        "user_id": "user_96",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.179914"
+      },
+      {
+        "user_id": "user_97",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.234028"
+      },
+      {
+        "user_id": "user_97",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:55.249751"
+      },
+      {
+        "user_id": "user_97",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:55.270483"
+      },
+      {
+        "user_id": "user_98",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.301478"
+      },
+      {
+        "user_id": "user_98",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:55.309143"
+      },
+      {
+        "user_id": "user_99",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.334192"
+      },
+      {
+        "user_id": "user_99",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:55.343031"
+      },
+      {
+        "user_id": "user_100",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.371300"
+      },
+      {
+        "user_id": "user_101",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.442192"
+      },
+      {
+        "user_id": "user_101",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:55.449266"
+      },
+      {
+        "user_id": "user_102",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.491730"
+      },
+      {
+        "user_id": "user_102",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:55.499222"
+      },
+      {
+        "user_id": "user_103",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.528756"
+      },
+      {
+        "user_id": "user_104",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.548708"
+      },
+      {
+        "user_id": "user_104",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:55.560677"
+      },
+      {
+        "user_id": "user_105",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.592397"
+      },
+      {
+        "user_id": "user_106",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.646339"
+      },
+      {
+        "user_id": "user_106",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:55.651408"
+      },
+      {
+        "user_id": "user_107",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.734500"
+      },
+      {
+        "user_id": "user_108",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.792271"
+      },
+      {
+        "user_id": "user_109",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.824093"
+      },
+      {
+        "user_id": "user_110",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.855877"
+      },
+      {
+        "user_id": "user_110",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:55.855877"
+      },
+      {
+        "user_id": "user_110",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:55.855877"
+      },
+      {
+        "user_id": "user_111",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.887725"
+      },
+      {
+        "user_id": "user_112",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.921348"
+      },
+      {
+        "user_id": "user_113",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.950873"
+      },
+      {
+        "user_id": "user_113",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:55.966931"
+      },
+      {
+        "user_id": "user_114",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.008152"
+      },
+      {
+        "user_id": "user_114",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:56.014977"
+      },
+      {
+        "user_id": "user_115",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.032884"
+      },
+      {
+        "user_id": "user_115",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:56.047032"
+      },
+      {
+        "user_id": "user_116",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.110952"
+      },
+      {
+        "user_id": "user_117",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.143007"
+      },
+      {
+        "user_id": "user_117",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:56.160204"
+      },
+      {
+        "user_id": "user_117",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:56.169434"
+      },
+      {
+        "user_id": "user_118",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.189160"
+      },
+      {
+        "user_id": "user_119",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.214785"
+      },
+      {
+        "user_id": "user_120",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.246539"
+      },
+      {
+        "user_id": "user_120",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:56.246539"
+      },
+      {
+        "user_id": "user_121",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.302460"
+      },
+      {
+        "user_id": "user_122",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.325684"
+      },
+      {
+        "user_id": "user_122",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:56.325684"
+      },
+      {
+        "user_id": "user_122",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:56.347854"
+      },
+      {
+        "user_id": "user_123",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.369273"
+      },
+      {
+        "user_id": "user_123",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:56.379000"
+      },
+      {
+        "user_id": "user_124",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.408203"
+      },
+      {
+        "user_id": "user_125",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.450206"
+      },
+      {
+        "user_id": "user_125",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:56.458294"
+      },
+      {
+        "user_id": "user_126",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.519033"
+      },
+      {
+        "user_id": "user_127",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.567193"
+      },
+      {
+        "user_id": "user_128",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.613817"
+      },
+      {
+        "user_id": "user_128",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:56.613817"
+      },
+      {
+        "user_id": "user_129",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.662391"
+      },
+      {
+        "user_id": "user_129",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:56.671177"
+      },
+      {
+        "user_id": "user_130",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.711733"
+      },
+      {
+        "user_id": "user_131",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.733626"
+      },
+      {
+        "user_id": "user_131",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:56.753962"
+      },
+      {
+        "user_id": "user_131",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:56.757985"
+      },
+      {
+        "user_id": "user_132",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.789310"
+      },
+      {
+        "user_id": "user_133",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.833548"
+      },
+      {
+        "user_id": "user_133",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:56.850338"
+      },
+      {
+        "user_id": "user_134",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.881819"
+      },
+      {
+        "user_id": "user_134",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:56.881819"
+      },
+      {
+        "user_id": "user_135",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.931550"
+      },
+      {
+        "user_id": "user_136",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.025686"
+      },
+      {
+        "user_id": "user_137",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.072870"
+      },
+      {
+        "user_id": "user_137",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:57.072870"
+      },
+      {
+        "user_id": "user_138",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.116505"
+      },
+      {
+        "user_id": "user_138",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:57.120465"
+      },
+      {
+        "user_id": "user_138",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:57.120465"
+      },
+      {
+        "user_id": "user_139",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.168358"
+      },
+      {
+        "user_id": "user_140",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.208798"
+      },
+      {
+        "user_id": "user_140",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:57.225862"
+      },
+      {
+        "user_id": "user_141",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.264768"
+      },
+      {
+        "user_id": "user_142",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.298102"
+      },
+      {
+        "user_id": "user_142",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:57.298102"
+      },
+      {
+        "user_id": "user_143",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.349501"
+      },
+      {
+        "user_id": "user_143",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:57.355675"
+      },
+      {
+        "user_id": "user_144",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.413933"
+      },
+      {
+        "user_id": "user_145",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.472608"
+      },
+      {
+        "user_id": "user_146",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.535732"
+      },
+      {
+        "user_id": "user_146",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:57.567365"
+      },
+      {
+        "user_id": "user_147",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.647256"
+      },
+      {
+        "user_id": "user_147",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:57.657087"
+      },
+      {
+        "user_id": "user_148",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.677984"
+      },
+      {
+        "user_id": "user_149",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.766595"
+      },
+      {
+        "user_id": "user_150",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.813909"
+      },
+      {
+        "user_id": "user_151",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.861937"
+      },
+      {
+        "user_id": "user_152",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.905819"
+      },
+      {
+        "user_id": "user_152",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:57.916671"
+      },
+      {
+        "user_id": "user_153",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.945749"
+      },
+      {
+        "user_id": "user_154",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.990156"
+      },
+      {
+        "user_id": "user_154",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:58.005222"
+      },
+      {
+        "user_id": "user_155",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.071151"
+      },
+      {
+        "user_id": "user_155",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:58.089949"
+      },
+      {
+        "user_id": "user_156",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.147059"
+      },
+      {
+        "user_id": "user_157",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.210596"
+      },
+      {
+        "user_id": "user_158",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.274944"
+      },
+      {
+        "user_id": "user_159",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.314609"
+      },
+      {
+        "user_id": "user_159",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:58.330330"
+      },
+      {
+        "user_id": "user_160",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.377990"
+      },
+      {
+        "user_id": "user_161",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.414296"
+      },
+      {
+        "user_id": "user_162",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.457818"
+      },
+      {
+        "user_id": "user_162",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:58.473926"
+      },
+      {
+        "user_id": "user_162",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:58.491949"
+      },
+      {
+        "user_id": "user_163",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.549705"
+      },
+      {
+        "user_id": "user_164",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.599642"
+      },
+      {
+        "user_id": "user_164",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:58.599642"
+      },
+      {
+        "user_id": "user_165",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.633027"
+      },
+      {
+        "user_id": "user_166",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.696228"
+      },
+      {
+        "user_id": "user_167",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.748278"
+      },
+      {
+        "user_id": "user_168",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.820048"
+      },
+      {
+        "user_id": "user_169",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.879663"
+      },
+      {
+        "user_id": "user_170",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.930968"
+      },
+      {
+        "user_id": "user_170",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:58.937256"
+      },
+      {
+        "user_id": "user_171",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.982461"
+      },
+      {
+        "user_id": "user_172",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:59.026940"
+      },
+      {
+        "user_id": "user_173",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:59.054135"
+      },
+      {
+        "user_id": "user_173",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:59.069889"
+      },
+      {
+        "user_id": "user_174",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:59.101836"
+      },
+      {
+        "user_id": "user_174",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:59.101836"
+      },
+      {
+        "user_id": "user_175",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:59.165198"
+      },
+      {
+        "user_id": "user_175",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:59.181343"
+      },
+      {
+        "user_id": "user_176",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:59.261404"
+      },
+      {
+        "user_id": "user_176",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:59.267601"
+      },
+      {
+        "user_id": "user_177",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:59.320034"
+      },
+      {
+        "user_id": "user_178",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:59.369014"
+      },
+      {
+        "user_id": "user_179",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:59.408757"
+      },
+      {
+        "user_id": "user_179",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:59.421521"
+      },
+      {
+        "user_id": "user_180",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:59.465322"
+      },
+      {
+        "user_id": "user_180",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:59.483859"
+      },
+      {
+        "user_id": "user_181",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:59.577127"
+      },
+      {
+        "user_id": "user_181",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:59.593253"
+      },
+      {
+        "user_id": "user_182",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:59.700181"
+      },
+      {
+        "user_id": "user_183",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:59.771456"
+      },
+      {
+        "user_id": "user_184",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:59.799955"
+      },
+      {
+        "user_id": "user_185",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:59.847623"
+      },
+      {
+        "user_id": "user_185",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:59.872018"
+      },
+      {
+        "user_id": "user_186",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:59.915399"
+      },
+      {
+        "user_id": "user_187",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:59.963235"
+      },
+      {
+        "user_id": "user_187",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:59.979023"
+      },
+      {
+        "user_id": "user_188",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:37:00.082553"
+      },
+      {
+        "user_id": "user_188",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:37:00.106087"
+      },
+      {
+        "user_id": "user_189",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:37:00.169806"
+      },
+      {
+        "user_id": "user_190",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:37:00.217526"
+      },
+      {
+        "user_id": "user_190",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:37:00.217526"
+      },
+      {
+        "user_id": "user_191",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:37:00.265146"
+      },
+      {
+        "user_id": "user_191",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:37:00.289394"
+      },
+      {
+        "user_id": "user_192",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:37:00.336239"
+      },
+      {
+        "user_id": "user_193",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:37:00.370290"
+      },
+      {
+        "user_id": "user_194",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:37:00.415701"
+      },
+      {
+        "user_id": "user_195",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:37:00.480735"
+      },
+      {
+        "user_id": "user_195",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:37:00.480735"
+      },
+      {
+        "user_id": "user_196",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:37:00.541849"
+      },
+      {
+        "user_id": "user_196",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:37:00.543863"
+      },
+      {
+        "user_id": "user_197",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:37:00.606872"
+      },
+      {
+        "user_id": "user_198",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:37:00.638710"
+      },
+      {
+        "user_id": "user_198",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:37:00.654906"
+      },
+      {
+        "user_id": "user_199",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:37:00.703255"
+      }
+    ]
+  },
+  "chatbot_greeting": {
+    "A": {
+      "impression": 108,
+      "click": 53,
+      "conversion": 23
+    },
+    "B": {
+      "impression": 92,
+      "conversion": 18,
+      "click": 43
+    },
+    "events": [
+      {
+        "user_id": "user_0",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:52.886814"
+      },
+      {
+        "user_id": "user_1",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:52.901177"
+      },
+      {
+        "user_id": "user_1",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:52.902945"
+      },
+      {
+        "user_id": "user_2",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:52.907408"
+      },
+      {
+        "user_id": "user_2",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:52.907408"
+      },
+      {
+        "user_id": "user_3",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:52.909947"
+      },
+      {
+        "user_id": "user_4",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:52.909947"
+      },
+      {
+        "user_id": "user_4",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:52.909947"
+      },
+      {
+        "user_id": "user_5",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:52.922932"
+      },
+      {
+        "user_id": "user_6",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:52.931074"
+      },
+      {
+        "user_id": "user_6",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:52.931074"
+      },
+      {
+        "user_id": "user_7",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:52.935288"
+      },
+      {
+        "user_id": "user_7",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:52.935288"
+      },
+      {
+        "user_id": "user_7",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:52.935288"
+      },
+      {
+        "user_id": "user_8",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:52.953520"
+      },
+      {
+        "user_id": "user_9",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:52.954519"
+      },
+      {
+        "user_id": "user_9",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:52.964532"
+      },
+      {
+        "user_id": "user_10",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:52.976374"
+      },
+      {
+        "user_id": "user_11",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:52.986152"
+      },
+      {
+        "user_id": "user_12",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:52.994029"
+      },
+      {
+        "user_id": "user_12",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:52.996533"
+      },
+      {
+        "user_id": "user_13",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.005263"
+      },
+      {
+        "user_id": "user_14",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.013264"
+      },
+      {
+        "user_id": "user_14",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:53.015265"
+      },
+      {
+        "user_id": "user_15",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.017272"
+      },
+      {
+        "user_id": "user_15",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.017272"
+      },
+      {
+        "user_id": "user_16",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.033037"
+      },
+      {
+        "user_id": "user_16",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:53.033037"
+      },
+      {
+        "user_id": "user_17",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.048700"
+      },
+      {
+        "user_id": "user_17",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.050721"
+      },
+      {
+        "user_id": "user_18",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.050721"
+      },
+      {
+        "user_id": "user_18",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.063698"
+      },
+      {
+        "user_id": "user_19",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.065467"
+      },
+      {
+        "user_id": "user_20",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.092416"
+      },
+      {
+        "user_id": "user_21",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.101178"
+      },
+      {
+        "user_id": "user_21",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.103192"
+      },
+      {
+        "user_id": "user_22",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.112226"
+      },
+      {
+        "user_id": "user_22",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:53.115074"
+      },
+      {
+        "user_id": "user_22",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.118489"
+      },
+      {
+        "user_id": "user_23",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.126499"
+      },
+      {
+        "user_id": "user_23",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.129499"
+      },
+      {
+        "user_id": "user_24",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.150963"
+      },
+      {
+        "user_id": "user_24",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.151443"
+      },
+      {
+        "user_id": "user_25",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.160441"
+      },
+      {
+        "user_id": "user_26",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.173654"
+      },
+      {
+        "user_id": "user_26",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.179320"
+      },
+      {
+        "user_id": "user_27",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.185654"
+      },
+      {
+        "user_id": "user_28",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.201346"
+      },
+      {
+        "user_id": "user_28",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:53.201346"
+      },
+      {
+        "user_id": "user_29",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.222324"
+      },
+      {
+        "user_id": "user_29",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.222324"
+      },
+      {
+        "user_id": "user_30",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.222324"
+      },
+      {
+        "user_id": "user_30",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:53.234835"
+      },
+      {
+        "user_id": "user_31",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.234835"
+      },
+      {
+        "user_id": "user_32",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.251186"
+      },
+      {
+        "user_id": "user_33",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.268598"
+      },
+      {
+        "user_id": "user_33",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.268598"
+      },
+      {
+        "user_id": "user_34",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.287618"
+      },
+      {
+        "user_id": "user_35",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.293938"
+      },
+      {
+        "user_id": "user_35",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.298254"
+      },
+      {
+        "user_id": "user_36",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.317764"
+      },
+      {
+        "user_id": "user_36",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.317764"
+      },
+      {
+        "user_id": "user_37",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.337775"
+      },
+      {
+        "user_id": "user_38",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.349510"
+      },
+      {
+        "user_id": "user_38",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.349510"
+      },
+      {
+        "user_id": "user_39",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.370327"
+      },
+      {
+        "user_id": "user_40",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.377770"
+      },
+      {
+        "user_id": "user_40",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:53.395664"
+      },
+      {
+        "user_id": "user_40",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.399685"
+      },
+      {
+        "user_id": "user_41",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.409526"
+      },
+      {
+        "user_id": "user_42",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.423125"
+      },
+      {
+        "user_id": "user_42",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.429145"
+      },
+      {
+        "user_id": "user_43",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.454500"
+      },
+      {
+        "user_id": "user_43",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:53.457491"
+      },
+      {
+        "user_id": "user_43",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.460498"
+      },
+      {
+        "user_id": "user_44",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.472856"
+      },
+      {
+        "user_id": "user_45",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.490348"
+      },
+      {
+        "user_id": "user_46",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.502140"
+      },
+      {
+        "user_id": "user_47",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.520534"
+      },
+      {
+        "user_id": "user_47",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.527428"
+      },
+      {
+        "user_id": "user_48",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.535760"
+      },
+      {
+        "user_id": "user_48",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.535760"
+      },
+      {
+        "user_id": "user_49",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.560844"
+      },
+      {
+        "user_id": "user_49",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.566590"
+      },
+      {
+        "user_id": "user_50",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.574836"
+      },
+      {
+        "user_id": "user_50",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:53.574836"
+      },
+      {
+        "user_id": "user_51",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.584970"
+      },
+      {
+        "user_id": "user_51",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:53.602284"
+      },
+      {
+        "user_id": "user_51",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.605536"
+      },
+      {
+        "user_id": "user_52",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.622463"
+      },
+      {
+        "user_id": "user_52",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.633433"
+      },
+      {
+        "user_id": "user_53",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.658923"
+      },
+      {
+        "user_id": "user_53",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.658923"
+      },
+      {
+        "user_id": "user_54",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.676320"
+      },
+      {
+        "user_id": "user_55",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.696324"
+      },
+      {
+        "user_id": "user_55",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:53.699324"
+      },
+      {
+        "user_id": "user_55",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.701231"
+      },
+      {
+        "user_id": "user_56",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.724286"
+      },
+      {
+        "user_id": "user_56",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.738641"
+      },
+      {
+        "user_id": "user_57",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.784998"
+      },
+      {
+        "user_id": "user_57",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.789995"
+      },
+      {
+        "user_id": "user_58",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.826249"
+      },
+      {
+        "user_id": "user_59",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.867552"
+      },
+      {
+        "user_id": "user_60",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.890228"
+      },
+      {
+        "user_id": "user_60",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:53.897432"
+      },
+      {
+        "user_id": "user_60",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.901427"
+      },
+      {
+        "user_id": "user_61",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.934443"
+      },
+      {
+        "user_id": "user_62",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.957369"
+      },
+      {
+        "user_id": "user_62",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.963421"
+      },
+      {
+        "user_id": "user_63",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.982706"
+      },
+      {
+        "user_id": "user_63",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:53.982706"
+      },
+      {
+        "user_id": "user_63",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.982706"
+      },
+      {
+        "user_id": "user_64",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.018142"
+      },
+      {
+        "user_id": "user_65",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.043018"
+      },
+      {
+        "user_id": "user_66",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.077771"
+      },
+      {
+        "user_id": "user_66",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:54.087283"
+      },
+      {
+        "user_id": "user_67",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.097545"
+      },
+      {
+        "user_id": "user_67",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:54.113237"
+      },
+      {
+        "user_id": "user_68",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.150245"
+      },
+      {
+        "user_id": "user_68",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:54.150245"
+      },
+      {
+        "user_id": "user_69",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.170398"
+      },
+      {
+        "user_id": "user_69",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:54.175275"
+      },
+      {
+        "user_id": "user_70",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.191311"
+      },
+      {
+        "user_id": "user_71",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.275697"
+      },
+      {
+        "user_id": "user_72",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.337477"
+      },
+      {
+        "user_id": "user_73",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.366393"
+      },
+      {
+        "user_id": "user_73",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:54.372122"
+      },
+      {
+        "user_id": "user_74",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.391143"
+      },
+      {
+        "user_id": "user_74",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:54.396190"
+      },
+      {
+        "user_id": "user_74",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:54.403433"
+      },
+      {
+        "user_id": "user_75",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.425488"
+      },
+      {
+        "user_id": "user_75",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:54.425488"
+      },
+      {
+        "user_id": "user_75",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:54.425488"
+      },
+      {
+        "user_id": "user_76",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.464152"
+      },
+      {
+        "user_id": "user_76",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:54.468187"
+      },
+      {
+        "user_id": "user_77",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.472923"
+      },
+      {
+        "user_id": "user_78",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.504484"
+      },
+      {
+        "user_id": "user_78",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:54.520212"
+      },
+      {
+        "user_id": "user_79",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.552216"
+      },
+      {
+        "user_id": "user_79",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:54.559857"
+      },
+      {
+        "user_id": "user_80",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.578369"
+      },
+      {
+        "user_id": "user_81",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.584631"
+      },
+      {
+        "user_id": "user_81",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:54.601161"
+      },
+      {
+        "user_id": "user_82",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.615274"
+      },
+      {
+        "user_id": "user_82",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:54.615274"
+      },
+      {
+        "user_id": "user_83",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.642261"
+      },
+      {
+        "user_id": "user_84",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.663239"
+      },
+      {
+        "user_id": "user_84",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:54.677724"
+      },
+      {
+        "user_id": "user_85",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.754145"
+      },
+      {
+        "user_id": "user_85",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:54.758591"
+      },
+      {
+        "user_id": "user_86",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.774455"
+      },
+      {
+        "user_id": "user_86",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:54.784439"
+      },
+      {
+        "user_id": "user_86",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:54.784439"
+      },
+      {
+        "user_id": "user_87",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.820471"
+      },
+      {
+        "user_id": "user_87",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:54.826063"
+      },
+      {
+        "user_id": "user_87",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:54.828076"
+      },
+      {
+        "user_id": "user_88",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.875329"
+      },
+      {
+        "user_id": "user_88",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:54.881329"
+      },
+      {
+        "user_id": "user_89",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.917602"
+      },
+      {
+        "user_id": "user_89",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:54.917602"
+      },
+      {
+        "user_id": "user_90",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.959044"
+      },
+      {
+        "user_id": "user_90",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:54.968196"
+      },
+      {
+        "user_id": "user_91",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.996060"
+      },
+      {
+        "user_id": "user_91",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:55.007473"
+      },
+      {
+        "user_id": "user_92",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.017414"
+      },
+      {
+        "user_id": "user_92",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:55.032471"
+      },
+      {
+        "user_id": "user_93",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.050799"
+      },
+      {
+        "user_id": "user_93",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:55.050799"
+      },
+      {
+        "user_id": "user_94",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.093508"
+      },
+      {
+        "user_id": "user_95",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.116993"
+      },
+      {
+        "user_id": "user_96",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.188034"
+      },
+      {
+        "user_id": "user_97",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.283635"
+      },
+      {
+        "user_id": "user_98",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.309143"
+      },
+      {
+        "user_id": "user_99",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.349130"
+      },
+      {
+        "user_id": "user_100",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.379065"
+      },
+      {
+        "user_id": "user_100",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:55.386392"
+      },
+      {
+        "user_id": "user_101",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.449266"
+      },
+      {
+        "user_id": "user_101",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:55.465270"
+      },
+      {
+        "user_id": "user_102",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.507299"
+      },
+      {
+        "user_id": "user_102",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:55.513099"
+      },
+      {
+        "user_id": "user_103",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.536835"
+      },
+      {
+        "user_id": "user_104",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.560677"
+      },
+      {
+        "user_id": "user_104",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:55.576710"
+      },
+      {
+        "user_id": "user_105",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.592397"
+      },
+      {
+        "user_id": "user_105",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:55.609393"
+      },
+      {
+        "user_id": "user_105",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:55.609393"
+      },
+      {
+        "user_id": "user_106",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.651408"
+      },
+      {
+        "user_id": "user_106",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:55.675975"
+      },
+      {
+        "user_id": "user_107",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.755454"
+      },
+      {
+        "user_id": "user_107",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:55.760634"
+      },
+      {
+        "user_id": "user_108",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.800729"
+      },
+      {
+        "user_id": "user_109",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.824093"
+      },
+      {
+        "user_id": "user_110",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.871697"
+      },
+      {
+        "user_id": "user_111",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.903682"
+      },
+      {
+        "user_id": "user_112",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.935060"
+      },
+      {
+        "user_id": "user_112",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:55.935060"
+      },
+      {
+        "user_id": "user_113",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.966931"
+      },
+      {
+        "user_id": "user_113",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:55.983635"
+      },
+      {
+        "user_id": "user_114",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.014977"
+      },
+      {
+        "user_id": "user_115",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.073622"
+      },
+      {
+        "user_id": "user_115",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:56.078600"
+      },
+      {
+        "user_id": "user_116",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.126772"
+      },
+      {
+        "user_id": "user_117",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.176581"
+      },
+      {
+        "user_id": "user_118",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.199547"
+      },
+      {
+        "user_id": "user_119",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.214785"
+      },
+      {
+        "user_id": "user_119",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:56.214785"
+      },
+      {
+        "user_id": "user_120",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.246539"
+      },
+      {
+        "user_id": "user_120",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:56.262434"
+      },
+      {
+        "user_id": "user_121",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.309588"
+      },
+      {
+        "user_id": "user_122",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.353442"
+      },
+      {
+        "user_id": "user_123",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.383031"
+      },
+      {
+        "user_id": "user_123",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:56.389157"
+      },
+      {
+        "user_id": "user_124",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.421204"
+      },
+      {
+        "user_id": "user_124",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:56.421204"
+      },
+      {
+        "user_id": "user_125",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.468194"
+      },
+      {
+        "user_id": "user_125",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:56.468194"
+      },
+      {
+        "user_id": "user_126",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.534197"
+      },
+      {
+        "user_id": "user_127",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.580016"
+      },
+      {
+        "user_id": "user_127",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:56.595842"
+      },
+      {
+        "user_id": "user_128",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.627600"
+      },
+      {
+        "user_id": "user_129",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.675135"
+      },
+      {
+        "user_id": "user_129",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:56.675135"
+      },
+      {
+        "user_id": "user_130",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.718491"
+      },
+      {
+        "user_id": "user_130",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:56.718491"
+      },
+      {
+        "user_id": "user_131",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.766810"
+      },
+      {
+        "user_id": "user_131",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:56.772994"
+      },
+      {
+        "user_id": "user_132",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.800246"
+      },
+      {
+        "user_id": "user_132",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:56.800246"
+      },
+      {
+        "user_id": "user_132",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:56.816515"
+      },
+      {
+        "user_id": "user_133",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.850338"
+      },
+      {
+        "user_id": "user_133",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:56.867042"
+      },
+      {
+        "user_id": "user_134",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.897631"
+      },
+      {
+        "user_id": "user_135",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.945584"
+      },
+      {
+        "user_id": "user_136",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.025686"
+      },
+      {
+        "user_id": "user_136",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:57.041329"
+      },
+      {
+        "user_id": "user_136",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:57.057160"
+      },
+      {
+        "user_id": "user_137",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.088885"
+      },
+      {
+        "user_id": "user_138",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.136369"
+      },
+      {
+        "user_id": "user_138",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:57.152363"
+      },
+      {
+        "user_id": "user_139",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.184191"
+      },
+      {
+        "user_id": "user_140",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.242854"
+      },
+      {
+        "user_id": "user_140",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:57.249832"
+      },
+      {
+        "user_id": "user_141",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.284964"
+      },
+      {
+        "user_id": "user_142",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.312539"
+      },
+      {
+        "user_id": "user_143",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.360580"
+      },
+      {
+        "user_id": "user_143",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:57.376075"
+      },
+      {
+        "user_id": "user_143",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:57.376075"
+      },
+      {
+        "user_id": "user_144",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.424064"
+      },
+      {
+        "user_id": "user_144",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:57.440053"
+      },
+      {
+        "user_id": "user_145",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.493745"
+      },
+      {
+        "user_id": "user_146",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.583484"
+      },
+      {
+        "user_id": "user_146",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:57.599207"
+      },
+      {
+        "user_id": "user_146",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:57.627154"
+      },
+      {
+        "user_id": "user_147",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.665929"
+      },
+      {
+        "user_id": "user_148",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.694159"
+      },
+      {
+        "user_id": "user_148",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:57.709950"
+      },
+      {
+        "user_id": "user_148",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:57.715158"
+      },
+      {
+        "user_id": "user_149",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.777057"
+      },
+      {
+        "user_id": "user_150",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.813909"
+      },
+      {
+        "user_id": "user_151",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.861937"
+      },
+      {
+        "user_id": "user_152",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.927738"
+      },
+      {
+        "user_id": "user_153",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.957838"
+      },
+      {
+        "user_id": "user_154",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.005222"
+      },
+      {
+        "user_id": "user_154",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:58.026553"
+      },
+      {
+        "user_id": "user_155",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.110251"
+      },
+      {
+        "user_id": "user_155",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:58.123151"
+      },
+      {
+        "user_id": "user_155",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:58.131102"
+      },
+      {
+        "user_id": "user_156",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.162782"
+      },
+      {
+        "user_id": "user_157",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.211704"
+      },
+      {
+        "user_id": "user_157",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:58.228547"
+      },
+      {
+        "user_id": "user_157",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:58.228547"
+      },
+      {
+        "user_id": "user_158",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.290624"
+      },
+      {
+        "user_id": "user_158",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:58.301141"
+      },
+      {
+        "user_id": "user_159",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.351920"
+      },
+      {
+        "user_id": "user_159",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:58.362168"
+      },
+      {
+        "user_id": "user_160",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.400676"
+      },
+      {
+        "user_id": "user_161",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.432281"
+      },
+      {
+        "user_id": "user_162",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.514133"
+      },
+      {
+        "user_id": "user_162",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:58.521695"
+      },
+      {
+        "user_id": "user_163",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.566462"
+      },
+      {
+        "user_id": "user_164",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.616256"
+      },
+      {
+        "user_id": "user_165",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.657378"
+      },
+      {
+        "user_id": "user_165",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:58.667956"
+      },
+      {
+        "user_id": "user_166",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.712294"
+      },
+      {
+        "user_id": "user_166",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:58.724425"
+      },
+      {
+        "user_id": "user_167",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.775753"
+      },
+      {
+        "user_id": "user_168",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.832329"
+      },
+      {
+        "user_id": "user_168",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:58.847685"
+      },
+      {
+        "user_id": "user_169",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.879663"
+      },
+      {
+        "user_id": "user_169",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:58.897789"
+      },
+      {
+        "user_id": "user_170",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.949325"
+      },
+      {
+        "user_id": "user_171",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.990176"
+      },
+      {
+        "user_id": "user_172",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:59.037958"
+      },
+      {
+        "user_id": "user_173",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:59.069889"
+      },
+      {
+        "user_id": "user_174",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:59.127454"
+      },
+      {
+        "user_id": "user_174",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:59.141215"
+      },
+      {
+        "user_id": "user_175",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:59.197204"
+      },
+      {
+        "user_id": "user_175",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:59.197204"
+      },
+      {
+        "user_id": "user_176",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:59.277321"
+      },
+      {
+        "user_id": "user_176",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:59.293245"
+      },
+      {
+        "user_id": "user_177",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:59.332896"
+      },
+      {
+        "user_id": "user_178",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:59.382746"
+      },
+      {
+        "user_id": "user_179",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:59.434148"
+      },
+      {
+        "user_id": "user_180",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:59.497596"
+      },
+      {
+        "user_id": "user_180",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:59.512132"
+      },
+      {
+        "user_id": "user_180",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:59.529685"
+      },
+      {
+        "user_id": "user_181",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:59.608900"
+      },
+      {
+        "user_id": "user_181",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:59.624684"
+      },
+      {
+        "user_id": "user_182",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:59.717348"
+      },
+      {
+        "user_id": "user_182",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:59.733973"
+      },
+      {
+        "user_id": "user_183",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:59.780032"
+      },
+      {
+        "user_id": "user_184",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:59.816001"
+      },
+      {
+        "user_id": "user_184",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:59.821763"
+      },
+      {
+        "user_id": "user_185",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:59.882875"
+      },
+      {
+        "user_id": "user_186",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:59.915399"
+      },
+      {
+        "user_id": "user_186",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:59.932334"
+      },
+      {
+        "user_id": "user_187",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:59.995055"
+      },
+      {
+        "user_id": "user_188",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:37:00.106087"
+      },
+      {
+        "user_id": "user_188",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:37:00.130288"
+      },
+      {
+        "user_id": "user_189",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:37:00.185902"
+      },
+      {
+        "user_id": "user_189",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:37:00.185902"
+      },
+      {
+        "user_id": "user_190",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:37:00.237830"
+      },
+      {
+        "user_id": "user_190",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:37:00.249335"
+      },
+      {
+        "user_id": "user_191",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:37:00.298596"
+      },
+      {
+        "user_id": "user_191",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:37:00.311899"
+      },
+      {
+        "user_id": "user_192",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:37:00.347252"
+      },
+      {
+        "user_id": "user_193",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:37:00.380899"
+      },
+      {
+        "user_id": "user_194",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:37:00.426427"
+      },
+      {
+        "user_id": "user_195",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:37:00.498939"
+      },
+      {
+        "user_id": "user_195",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:37:00.516049"
+      },
+      {
+        "user_id": "user_196",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:37:00.568980"
+      },
+      {
+        "user_id": "user_196",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:37:00.575034"
+      },
+      {
+        "user_id": "user_197",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:37:00.622833"
+      },
+      {
+        "user_id": "user_198",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:37:00.673157"
+      },
+      {
+        "user_id": "user_198",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:37:00.681190"
+      },
+      {
+        "user_id": "user_199",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:37:00.719213"
+      },
+      {
+        "user_id": "user_199",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:37:00.735022"
+      }
+    ]
+  },
+  "activity_section_heading": {
+    "A": {
+      "impression": 96,
+      "click": 45,
+      "conversion": 14
+    },
+    "B": {
+      "impression": 104,
+      "conversion": 23,
+      "click": 43
+    },
+    "events": [
+      {
+        "user_id": "user_0",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:52.886814"
+      },
+      {
+        "user_id": "user_0",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:52.886814"
+      },
+      {
+        "user_id": "user_1",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:52.904353"
+      },
+      {
+        "user_id": "user_2",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:52.907408"
+      },
+      {
+        "user_id": "user_3",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:52.909947"
+      },
+      {
+        "user_id": "user_4",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:52.921128"
+      },
+      {
+        "user_id": "user_4",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:52.922932"
+      },
+      {
+        "user_id": "user_5",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:52.922932"
+      },
+      {
+        "user_id": "user_5",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:52.922932"
+      },
+      {
+        "user_id": "user_6",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:52.935288"
+      },
+      {
+        "user_id": "user_6",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:52.935288"
+      },
+      {
+        "user_id": "user_7",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:52.935288"
+      },
+      {
+        "user_id": "user_8",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:52.954519"
+      },
+      {
+        "user_id": "user_9",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:52.966548"
+      },
+      {
+        "user_id": "user_9",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:52.969378"
+      },
+      {
+        "user_id": "user_10",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:52.978369"
+      },
+      {
+        "user_id": "user_11",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:52.989149"
+      },
+      {
+        "user_id": "user_12",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:52.998598"
+      },
+      {
+        "user_id": "user_12",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.001250"
+      },
+      {
+        "user_id": "user_13",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.007265"
+      },
+      {
+        "user_id": "user_14",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.016266"
+      },
+      {
+        "user_id": "user_15",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.017272"
+      },
+      {
+        "user_id": "user_15",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.017272"
+      },
+      {
+        "user_id": "user_16",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.038053"
+      },
+      {
+        "user_id": "user_17",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.050721"
+      },
+      {
+        "user_id": "user_17",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.050721"
+      },
+      {
+        "user_id": "user_18",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.065467"
+      },
+      {
+        "user_id": "user_18",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.065467"
+      },
+      {
+        "user_id": "user_19",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.065467"
+      },
+      {
+        "user_id": "user_19",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.080778"
+      },
+      {
+        "user_id": "user_20",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.094438"
+      },
+      {
+        "user_id": "user_21",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.103192"
+      },
+      {
+        "user_id": "user_21",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.103192"
+      },
+      {
+        "user_id": "user_22",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.121504"
+      },
+      {
+        "user_id": "user_23",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.132498"
+      },
+      {
+        "user_id": "user_23",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:53.134654"
+      },
+      {
+        "user_id": "user_24",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.154437"
+      },
+      {
+        "user_id": "user_24",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.156418"
+      },
+      {
+        "user_id": "user_25",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.160441"
+      },
+      {
+        "user_id": "user_26",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.183386"
+      },
+      {
+        "user_id": "user_27",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.185654"
+      },
+      {
+        "user_id": "user_28",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.201346"
+      },
+      {
+        "user_id": "user_29",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.222324"
+      },
+      {
+        "user_id": "user_30",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.234835"
+      },
+      {
+        "user_id": "user_30",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.234835"
+      },
+      {
+        "user_id": "user_31",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.234835"
+      },
+      {
+        "user_id": "user_31",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.251186"
+      },
+      {
+        "user_id": "user_32",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.251186"
+      },
+      {
+        "user_id": "user_32",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.251186"
+      },
+      {
+        "user_id": "user_33",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.268598"
+      },
+      {
+        "user_id": "user_33",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.268598"
+      },
+      {
+        "user_id": "user_34",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.290307"
+      },
+      {
+        "user_id": "user_35",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.303643"
+      },
+      {
+        "user_id": "user_36",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.317764"
+      },
+      {
+        "user_id": "user_36",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:53.317764"
+      },
+      {
+        "user_id": "user_37",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.340888"
+      },
+      {
+        "user_id": "user_37",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:53.341523"
+      },
+      {
+        "user_id": "user_37",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.347489"
+      },
+      {
+        "user_id": "user_38",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.360047"
+      },
+      {
+        "user_id": "user_39",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.374355"
+      },
+      {
+        "user_id": "user_39",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:53.377770"
+      },
+      {
+        "user_id": "user_39",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.377770"
+      },
+      {
+        "user_id": "user_40",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.401693"
+      },
+      {
+        "user_id": "user_40",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.403705"
+      },
+      {
+        "user_id": "user_41",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.415068"
+      },
+      {
+        "user_id": "user_42",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.434136"
+      },
+      {
+        "user_id": "user_43",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.463493"
+      },
+      {
+        "user_id": "user_43",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:53.467503"
+      },
+      {
+        "user_id": "user_44",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.476891"
+      },
+      {
+        "user_id": "user_44",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.481602"
+      },
+      {
+        "user_id": "user_45",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.494242"
+      },
+      {
+        "user_id": "user_46",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.506134"
+      },
+      {
+        "user_id": "user_47",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.533891"
+      },
+      {
+        "user_id": "user_48",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.551352"
+      },
+      {
+        "user_id": "user_49",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.566590"
+      },
+      {
+        "user_id": "user_50",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.584970"
+      },
+      {
+        "user_id": "user_51",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.609460"
+      },
+      {
+        "user_id": "user_51",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.614399"
+      },
+      {
+        "user_id": "user_52",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.641542"
+      },
+      {
+        "user_id": "user_53",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.668327"
+      },
+      {
+        "user_id": "user_54",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.681322"
+      },
+      {
+        "user_id": "user_54",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.687323"
+      },
+      {
+        "user_id": "user_55",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.701231"
+      },
+      {
+        "user_id": "user_55",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:53.718478"
+      },
+      {
+        "user_id": "user_55",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.720491"
+      },
+      {
+        "user_id": "user_56",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.746663"
+      },
+      {
+        "user_id": "user_56",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.755690"
+      },
+      {
+        "user_id": "user_57",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.796996"
+      },
+      {
+        "user_id": "user_57",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.804021"
+      },
+      {
+        "user_id": "user_58",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.836881"
+      },
+      {
+        "user_id": "user_58",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:53.844048"
+      },
+      {
+        "user_id": "user_58",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.853586"
+      },
+      {
+        "user_id": "user_59",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.872104"
+      },
+      {
+        "user_id": "user_60",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.901427"
+      },
+      {
+        "user_id": "user_60",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:53.915759"
+      },
+      {
+        "user_id": "user_61",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.942482"
+      },
+      {
+        "user_id": "user_61",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:53.942482"
+      },
+      {
+        "user_id": "user_62",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:53.970415"
+      },
+      {
+        "user_id": "user_63",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.001504"
+      },
+      {
+        "user_id": "user_64",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.023124"
+      },
+      {
+        "user_id": "user_64",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:54.023124"
+      },
+      {
+        "user_id": "user_64",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:54.023124"
+      },
+      {
+        "user_id": "user_65",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.050836"
+      },
+      {
+        "user_id": "user_66",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.093432"
+      },
+      {
+        "user_id": "user_67",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.117582"
+      },
+      {
+        "user_id": "user_67",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:54.125448"
+      },
+      {
+        "user_id": "user_68",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.159467"
+      },
+      {
+        "user_id": "user_69",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.175275"
+      },
+      {
+        "user_id": "user_69",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:54.188265"
+      },
+      {
+        "user_id": "user_70",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.211003"
+      },
+      {
+        "user_id": "user_70",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:54.224874"
+      },
+      {
+        "user_id": "user_70",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:54.234974"
+      },
+      {
+        "user_id": "user_71",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.288771"
+      },
+      {
+        "user_id": "user_71",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:54.298751"
+      },
+      {
+        "user_id": "user_72",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.346598"
+      },
+      {
+        "user_id": "user_73",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.378191"
+      },
+      {
+        "user_id": "user_74",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.407471"
+      },
+      {
+        "user_id": "user_75",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.441321"
+      },
+      {
+        "user_id": "user_75",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:54.451391"
+      },
+      {
+        "user_id": "user_76",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.472923"
+      },
+      {
+        "user_id": "user_77",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.488724"
+      },
+      {
+        "user_id": "user_77",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:54.500738"
+      },
+      {
+        "user_id": "user_77",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:54.504484"
+      },
+      {
+        "user_id": "user_78",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.520212"
+      },
+      {
+        "user_id": "user_79",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.565938"
+      },
+      {
+        "user_id": "user_80",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.584631"
+      },
+      {
+        "user_id": "user_81",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.607208"
+      },
+      {
+        "user_id": "user_82",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.631292"
+      },
+      {
+        "user_id": "user_83",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.651214"
+      },
+      {
+        "user_id": "user_84",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.697160"
+      },
+      {
+        "user_id": "user_84",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:54.711059"
+      },
+      {
+        "user_id": "user_85",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.758591"
+      },
+      {
+        "user_id": "user_86",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.784439"
+      },
+      {
+        "user_id": "user_86",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:54.806578"
+      },
+      {
+        "user_id": "user_87",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.839433"
+      },
+      {
+        "user_id": "user_87",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:54.845437"
+      },
+      {
+        "user_id": "user_87",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:54.853290"
+      },
+      {
+        "user_id": "user_88",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.884351"
+      },
+      {
+        "user_id": "user_88",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:54.884351"
+      },
+      {
+        "user_id": "user_88",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:54.898970"
+      },
+      {
+        "user_id": "user_89",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.932979"
+      },
+      {
+        "user_id": "user_90",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:54.976610"
+      },
+      {
+        "user_id": "user_91",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.009821"
+      },
+      {
+        "user_id": "user_92",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.034238"
+      },
+      {
+        "user_id": "user_93",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.067227"
+      },
+      {
+        "user_id": "user_93",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:55.067227"
+      },
+      {
+        "user_id": "user_93",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:55.083678"
+      },
+      {
+        "user_id": "user_94",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.104510"
+      },
+      {
+        "user_id": "user_94",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:55.111517"
+      },
+      {
+        "user_id": "user_95",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.142985"
+      },
+      {
+        "user_id": "user_95",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:55.166798"
+      },
+      {
+        "user_id": "user_96",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.214048"
+      },
+      {
+        "user_id": "user_97",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.293882"
+      },
+      {
+        "user_id": "user_98",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.322159"
+      },
+      {
+        "user_id": "user_98",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:55.329226"
+      },
+      {
+        "user_id": "user_99",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.354741"
+      },
+      {
+        "user_id": "user_99",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:55.354741"
+      },
+      {
+        "user_id": "user_100",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.386392"
+      },
+      {
+        "user_id": "user_100",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:55.417370"
+      },
+      {
+        "user_id": "user_100",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:55.429477"
+      },
+      {
+        "user_id": "user_101",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.481180"
+      },
+      {
+        "user_id": "user_102",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.515115"
+      },
+      {
+        "user_id": "user_103",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.542898"
+      },
+      {
+        "user_id": "user_103",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:55.548708"
+      },
+      {
+        "user_id": "user_104",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.584419"
+      },
+      {
+        "user_id": "user_105",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.624615"
+      },
+      {
+        "user_id": "user_106",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.688820"
+      },
+      {
+        "user_id": "user_106",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:55.718276"
+      },
+      {
+        "user_id": "user_107",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.776545"
+      },
+      {
+        "user_id": "user_107",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:55.776545"
+      },
+      {
+        "user_id": "user_108",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.808120"
+      },
+      {
+        "user_id": "user_108",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:55.808120"
+      },
+      {
+        "user_id": "user_109",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.839858"
+      },
+      {
+        "user_id": "user_109",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:55.839858"
+      },
+      {
+        "user_id": "user_110",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.883985"
+      },
+      {
+        "user_id": "user_110",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:55.887725"
+      },
+      {
+        "user_id": "user_111",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.913287"
+      },
+      {
+        "user_id": "user_111",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:55.921348"
+      },
+      {
+        "user_id": "user_112",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.950873"
+      },
+      {
+        "user_id": "user_113",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:55.983635"
+      },
+      {
+        "user_id": "user_113",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:56.000243"
+      },
+      {
+        "user_id": "user_114",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.032884"
+      },
+      {
+        "user_id": "user_115",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.103041"
+      },
+      {
+        "user_id": "user_115",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:56.110952"
+      },
+      {
+        "user_id": "user_116",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.143007"
+      },
+      {
+        "user_id": "user_117",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.183166"
+      },
+      {
+        "user_id": "user_118",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.203401"
+      },
+      {
+        "user_id": "user_119",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.231739"
+      },
+      {
+        "user_id": "user_120",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.262434"
+      },
+      {
+        "user_id": "user_120",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:56.281923"
+      },
+      {
+        "user_id": "user_120",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:56.293833"
+      },
+      {
+        "user_id": "user_121",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.309588"
+      },
+      {
+        "user_id": "user_121",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:56.325684"
+      },
+      {
+        "user_id": "user_122",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.357265"
+      },
+      {
+        "user_id": "user_123",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.389157"
+      },
+      {
+        "user_id": "user_124",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.440732"
+      },
+      {
+        "user_id": "user_125",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.488788"
+      },
+      {
+        "user_id": "user_126",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.550149"
+      },
+      {
+        "user_id": "user_127",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.595842"
+      },
+      {
+        "user_id": "user_128",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.627600"
+      },
+      {
+        "user_id": "user_128",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:56.643494"
+      },
+      {
+        "user_id": "user_128",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:56.643494"
+      },
+      {
+        "user_id": "user_129",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.692199"
+      },
+      {
+        "user_id": "user_129",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:56.702749"
+      },
+      {
+        "user_id": "user_130",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.733626"
+      },
+      {
+        "user_id": "user_131",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.782141"
+      },
+      {
+        "user_id": "user_132",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.816515"
+      },
+      {
+        "user_id": "user_132",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:56.833548"
+      },
+      {
+        "user_id": "user_133",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.867042"
+      },
+      {
+        "user_id": "user_134",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.913476"
+      },
+      {
+        "user_id": "user_134",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:56.927768"
+      },
+      {
+        "user_id": "user_135",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:56.969323"
+      },
+      {
+        "user_id": "user_135",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:57.006037"
+      },
+      {
+        "user_id": "user_136",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.057160"
+      },
+      {
+        "user_id": "user_137",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.088885"
+      },
+      {
+        "user_id": "user_137",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:57.109340"
+      },
+      {
+        "user_id": "user_138",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.152363"
+      },
+      {
+        "user_id": "user_138",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:57.168358"
+      },
+      {
+        "user_id": "user_139",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.200749"
+      },
+      {
+        "user_id": "user_140",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.264768"
+      },
+      {
+        "user_id": "user_141",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.284964"
+      },
+      {
+        "user_id": "user_142",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.328434"
+      },
+      {
+        "user_id": "user_142",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:57.328434"
+      },
+      {
+        "user_id": "user_143",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.392124"
+      },
+      {
+        "user_id": "user_143",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:57.404191"
+      },
+      {
+        "user_id": "user_144",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.449449"
+      },
+      {
+        "user_id": "user_144",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:57.461352"
+      },
+      {
+        "user_id": "user_145",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.503756"
+      },
+      {
+        "user_id": "user_145",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:57.519878"
+      },
+      {
+        "user_id": "user_146",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.630744"
+      },
+      {
+        "user_id": "user_147",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.673966"
+      },
+      {
+        "user_id": "user_147",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:57.677984"
+      },
+      {
+        "user_id": "user_148",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.740533"
+      },
+      {
+        "user_id": "user_148",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:57.751469"
+      },
+      {
+        "user_id": "user_149",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.782660"
+      },
+      {
+        "user_id": "user_149",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:57.797911"
+      },
+      {
+        "user_id": "user_149",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:57.801371"
+      },
+      {
+        "user_id": "user_150",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.829812"
+      },
+      {
+        "user_id": "user_150",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:57.829812"
+      },
+      {
+        "user_id": "user_150",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:57.849865"
+      },
+      {
+        "user_id": "user_151",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.877757"
+      },
+      {
+        "user_id": "user_151",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:57.895473"
+      },
+      {
+        "user_id": "user_152",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.931762"
+      },
+      {
+        "user_id": "user_153",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:57.957838"
+      },
+      {
+        "user_id": "user_153",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:57.983684"
+      },
+      {
+        "user_id": "user_154",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.039908"
+      },
+      {
+        "user_id": "user_154",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:58.052784"
+      },
+      {
+        "user_id": "user_155",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.147059"
+      },
+      {
+        "user_id": "user_156",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.178766"
+      },
+      {
+        "user_id": "user_156",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:58.178766"
+      },
+      {
+        "user_id": "user_156",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:58.194526"
+      },
+      {
+        "user_id": "user_157",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.254180"
+      },
+      {
+        "user_id": "user_157",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:58.269023"
+      },
+      {
+        "user_id": "user_158",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.310019"
+      },
+      {
+        "user_id": "user_158",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:58.314609"
+      },
+      {
+        "user_id": "user_159",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.362168"
+      },
+      {
+        "user_id": "user_159",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:58.377990"
+      },
+      {
+        "user_id": "user_160",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.410262"
+      },
+      {
+        "user_id": "user_161",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.441933"
+      },
+      {
+        "user_id": "user_161",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:58.448048"
+      },
+      {
+        "user_id": "user_162",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.533328"
+      },
+      {
+        "user_id": "user_162",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:58.549705"
+      },
+      {
+        "user_id": "user_163",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.581803"
+      },
+      {
+        "user_id": "user_163",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:58.581803"
+      },
+      {
+        "user_id": "user_164",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.633027"
+      },
+      {
+        "user_id": "user_165",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.676481"
+      },
+      {
+        "user_id": "user_165",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:58.680502"
+      },
+      {
+        "user_id": "user_166",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.733070"
+      },
+      {
+        "user_id": "user_166",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:58.743988"
+      },
+      {
+        "user_id": "user_167",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.798266"
+      },
+      {
+        "user_id": "user_168",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.859770"
+      },
+      {
+        "user_id": "user_168",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:58.868841"
+      },
+      {
+        "user_id": "user_169",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.911148"
+      },
+      {
+        "user_id": "user_169",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:58.917336"
+      },
+      {
+        "user_id": "user_170",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:58.966579"
+      },
+      {
+        "user_id": "user_171",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:59.006295"
+      },
+      {
+        "user_id": "user_171",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:59.016399"
+      },
+      {
+        "user_id": "user_172",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:59.037958"
+      },
+      {
+        "user_id": "user_173",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:59.092497"
+      },
+      {
+        "user_id": "user_174",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:59.160137"
+      },
+      {
+        "user_id": "user_175",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:59.213330"
+      },
+      {
+        "user_id": "user_175",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:59.230150"
+      },
+      {
+        "user_id": "user_175",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:59.245441"
+      },
+      {
+        "user_id": "user_176",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:59.309208"
+      },
+      {
+        "user_id": "user_177",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:59.342047"
+      },
+      {
+        "user_id": "user_177",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:59.354853"
+      },
+      {
+        "user_id": "user_177",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:59.366025"
+      },
+      {
+        "user_id": "user_178",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:59.397492"
+      },
+      {
+        "user_id": "user_179",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:59.445214"
+      },
+      {
+        "user_id": "user_179",
+        "variant": "A",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:59.458327"
+      },
+      {
+        "user_id": "user_180",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:59.543648"
+      },
+      {
+        "user_id": "user_180",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:59.561339"
+      },
+      {
+        "user_id": "user_181",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:59.640798"
+      },
+      {
+        "user_id": "user_181",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:36:59.656719"
+      },
+      {
+        "user_id": "user_181",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:59.684543"
+      },
+      {
+        "user_id": "user_182",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:59.735986"
+      },
+      {
+        "user_id": "user_182",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:59.752038"
+      },
+      {
+        "user_id": "user_183",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:59.783917"
+      },
+      {
+        "user_id": "user_184",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:59.835627"
+      },
+      {
+        "user_id": "user_184",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:59.847623"
+      },
+      {
+        "user_id": "user_185",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:59.893934"
+      },
+      {
+        "user_id": "user_185",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:59.899730"
+      },
+      {
+        "user_id": "user_186",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:59.949277"
+      },
+      {
+        "user_id": "user_186",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:36:59.949277"
+      },
+      {
+        "user_id": "user_187",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:36:59.995055"
+      },
+      {
+        "user_id": "user_187",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:37:00.045941"
+      },
+      {
+        "user_id": "user_188",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:37:00.137889"
+      },
+      {
+        "user_id": "user_188",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:37:00.153939"
+      },
+      {
+        "user_id": "user_188",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:37:00.153939"
+      },
+      {
+        "user_id": "user_189",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:37:00.201714"
+      },
+      {
+        "user_id": "user_190",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:37:00.249335"
+      },
+      {
+        "user_id": "user_191",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:37:00.324484"
+      },
+      {
+        "user_id": "user_192",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:37:00.349186"
+      },
+      {
+        "user_id": "user_193",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:37:00.380899"
+      },
+      {
+        "user_id": "user_193",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:37:00.404514"
+      },
+      {
+        "user_id": "user_194",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:37:00.432569"
+      },
+      {
+        "user_id": "user_194",
+        "variant": "B",
+        "event": "conversion",
+        "timestamp": "2026-04-15T06:37:00.449625"
+      },
+      {
+        "user_id": "user_194",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:37:00.464597"
+      },
+      {
+        "user_id": "user_195",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:37:00.528518"
+      },
+      {
+        "user_id": "user_196",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:37:00.591048"
+      },
+      {
+        "user_id": "user_196",
+        "variant": "B",
+        "event": "click",
+        "timestamp": "2026-04-15T06:37:00.595080"
+      },
+      {
+        "user_id": "user_197",
+        "variant": "B",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:37:00.638710"
+      },
+      {
+        "user_id": "user_198",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:37:00.696238"
+      },
+      {
+        "user_id": "user_198",
+        "variant": "A",
+        "event": "click",
+        "timestamp": "2026-04-15T06:37:00.703255"
+      },
+      {
+        "user_id": "user_199",
+        "variant": "A",
+        "event": "impression",
+        "timestamp": "2026-04-15T06:37:00.751951"
+      }
+    ]
+  }
+}
