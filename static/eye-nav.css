@@ -1,0 +1,167 @@
+/* EyeNav — eyes-only navigation widget styles */
+
+.eyenav-hidden { display: none !important; }
+
+.eyenav-eye { font-style: normal; }
+
+/* Floating launch button */
+.eyenav-launch {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  z-index: 99990;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 999px;
+  background: #5C068C;
+  color: #fff;
+  font: 600 15px/1 'Inter', system-ui, sans-serif;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(92, 6, 140, 0.35);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.eyenav-launch:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(92, 6, 140, 0.45);
+}
+
+/* Intro overlay */
+.eyenav-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 99998;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(20, 8, 30, 0.65);
+  backdrop-filter: blur(4px);
+}
+.eyenav-card {
+  max-width: 460px;
+  margin: 16px;
+  padding: 28px 30px;
+  border-radius: 18px;
+  background: #fff;
+  color: #2b2b2b;
+  font-family: 'Inter', system-ui, sans-serif;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+}
+.eyenav-card h2 {
+  margin: 0 0 10px;
+  font-size: 1.4rem;
+  color: #5C068C;
+}
+.eyenav-card p { margin: 0 0 12px; font-size: 0.95rem; }
+.eyenav-card ul { margin: 0 0 12px; padding-left: 20px; font-size: 0.95rem; }
+.eyenav-card li { margin-bottom: 6px; }
+.eyenav-perm { color: #5C068C; }
+.eyenav-actions { display: flex; gap: 10px; margin-top: 18px; }
+.eyenav-btn {
+  flex: 1;
+  padding: 11px 14px;
+  border: 1px solid #d8d0e0;
+  border-radius: 10px;
+  background: #fff;
+  font: 600 14px 'Inter', system-ui, sans-serif;
+  cursor: pointer;
+}
+.eyenav-btn-primary {
+  background: #5C068C;
+  border-color: #5C068C;
+  color: #fff;
+}
+
+/* HUD */
+.eyenav-hud {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  z-index: 99995;
+  width: 190px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #18101f;
+  font-family: 'Inter', system-ui, sans-serif;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.4);
+}
+.eyenav-videowrap { position: relative; height: 130px; }
+.eyenav-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scaleX(-1); /* mirror so the preview feels natural */
+}
+.eyenav-arrow {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.25);
+  font-size: 20px;
+  line-height: 1;
+  transition: color 0.1s ease, text-shadow 0.1s ease;
+  pointer-events: none;
+}
+.eyenav-arrow-up { top: 4px; left: 50%; transform: translateX(-50%); }
+.eyenav-arrow-down { bottom: 4px; left: 50%; transform: translateX(-50%); }
+.eyenav-arrow-left { left: 6px; top: 50%; transform: translateY(-50%); }
+.eyenav-arrow-right { right: 6px; top: 50%; transform: translateY(-50%); }
+.eyenav-arrow-active {
+  color: #6ee86e;
+  text-shadow: 0 0 10px rgba(110, 232, 110, 0.9);
+}
+.eyenav-ring {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 56px;
+  height: 56px;
+  transform: rotate(-90deg);
+  opacity: 0;
+  transition: opacity 0.15s ease;
+  pointer-events: none;
+}
+.eyenav-ring circle {
+  fill: none;
+  stroke: #6ee86e;
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+.eyenav-status {
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #cfc4dc;
+}
+.eyenav-status-ok { color: #6ee86e; }
+.eyenav-status-warn { color: #ffc94d; }
+.eyenav-status-err { color: #ff7a7a; }
+.eyenav-stop {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 24px;
+  height: 24px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  font-size: 15px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+/* Action banner (page change / pause notices) */
+.eyenav-banner {
+  position: fixed;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99999;
+  padding: 10px 22px;
+  border-radius: 999px;
+  background: #5C068C;
+  color: #fff;
+  font: 600 14px 'Inter', system-ui, sans-serif;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
