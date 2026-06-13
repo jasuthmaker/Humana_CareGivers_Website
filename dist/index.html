@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generational Wellness - Humana Care</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --humana-green: #5C9A1B;
+            --humana-dark-blue: #005B68;
+            --humana-dark-green: #78BE20;
+            --humana-light-green: rgba(92, 154, 27, 0.1);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .text-humana-blue {
+            color: var(--humana-dark-blue);
+        }
+
+        .text-humana-green {
+            color: var(--humana-green);
+        }
+
+        .bg-humana-green {
+            background-color: var(--humana-green);
+        }
+
+        .bg-humana-blue {
+            background-color: var(--humana-dark-blue);
+        }
+
+        .bg-humana-dark-green {
+            background-color: var(--humana-dark-green);
+        }
+
+        .bg-humana-light-green {
+            background-color: var(--humana-light-green);
+        }
+
+        .btn-humana {
+            background-color: var(--humana-green);
+            color: white;
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-humana:hover {
+            background-color: var(--humana-dark-green);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Navbar styles */
+        .humana-main-header {
+            background: #fff;
+            border-top: 5px solid var(--humana-dark-green);
+            border-bottom: 1px solid #e0e0e0;
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+            min-height: 64px;
+        }
+
+        .humana-main-header .container {
+            align-items: stretch;
+        }
+
+        .humana-main-header .navbar-brand {
+            padding: 0;
+            display: flex;
+            align-items: stretch;
+            margin-top: -4px;
+            /* Nudge logo up little */
+        }
+
+        .humana-brand-logo-container {
+            width: 65px;
+            height: 65px;
+            background-color: transparent;
+            border-radius: 0;
+            display: flex;
+            align-items: stretch;
+            justify-content: center;
+            flex-shrink: 0;
+            align-self: stretch;
+            margin-right: 12px;
+            overflow: hidden;
+        }
+
+        .humana-brand-text-image {
+            height: 56px;
+            width: auto;
+            align-self: center;
+            margin-left: 4px;
+        }
+
+        .humana-main-header .nav-link {
+            color: #333;
+            font-weight: 500;
+            padding: 1.2rem 1rem !important;
+            font-size: 0.95rem;
+            transition: color 0.2s ease;
+            border-bottom: 3px solid transparent;
+        }
+
+        .humana-main-header .nav-link:hover {
+            color: var(--humana-dark-green);
+            border-bottom: 3px solid var(--humana-dark-green);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .humana-main-hero {
+            background: url("/static/HUMANA%20PROJECT%20(4).png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 5rem 0;
+            transition: all 0.3s ease;
+        }
+
+        .humana-main-hero h1 {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            line-height: 1.1;
+        }
+
+        .humana-main-hero::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 120px;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+            pointer-events: none;
+        }
+
+        /* move the box little up */
+        .humana-hero-content-box {
+            background: rgba(255, 255, 255, 0.88);
+            padding: clamp(1.5rem, 4vw, 3.5rem);
+            border-radius: 2rem;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+            max-width: 700px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .humana-hero-statistics-card {
+            bottom: -20px;
+            left: -20px;
+            max-width: 280px;
+            z-index: 10;
+        }
+
+        .humana-badge-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .humana-feature-icon-wrapper {
+            width: 56px;
+            height: 56px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .humana-activity-preview-box {
+            transition: all 0.3s ease;
+        }
+
+        .humana-activity-preview-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1) !important;
+        }
+
+        .humana-wellness-hero-image {
+            margin-top: 2rem;
+            transition: transform 0.3s ease;
+        }
+
+        @media (min-width: 992px) {
+            .humana-wellness-hero-image {
+                margin-top: 3rem;
+                transform: translateY(20px);
+            }
+        }
+
+        @media (min-width: 1400px) {
+            .humana-hero-content-box {
+                transform: translateX(-2rem);
+            }
+        }
+
+        .humana-numerical-step {
+            width: 40px;
+            height: 40px;
+            background-color: var(--humana-light-green);
+            color: var(--humana-green);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .humana-call-to-action-container {
+            background-color: var(--humana-dark-blue);
+            background-image: radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 90% 80%, rgba(92, 154, 27, 0.2) 0%, transparent 50%);
+        }
+
+        .hover-green:hover {
+            color: var(--humana-green) !important;
+        }
+
+        .rounded-5 {
+            border-radius: 2rem !important;
+        }
+
+        .rounded-4 {
+            height: 50%;
+            border-radius: 1.5rem !important;
+        }
+
+        @media (max-width: 991px) {
+            .display-3 {
+                font-size: 2.5rem;
+            }
+
+            .humana-main-header .navbar-brand {
+                margin-top: 0;
+            }
+
+            .humana-brand-logo-container {
+                width: 45px;
+                height: 45px;
+            }
+
+            .humana-brand-text-image {
+                height: 38px;
+            }
+
+            .humana-main-hero {
+                min-height: auto;
+                padding: clamp(4rem, 12vh, 8rem) 0;
+                background-position: 70% center;
+            }
+
+            .humana-hero-content-box {
+                padding: 2.5rem 1.5rem;
+                border-radius: 1.5rem;
+                max-width: 100%;
+                margin: 0;
+                text-align: center;
+            }
+
+            @media (max-width: 768px) {
+                .humana-main-hero .row {
+                    justify-content: center;
+                }
+
+                .humana-hero-content-box {
+                    text-align: center;
+                }
+            }
+
+            .display-3 {
+                font-size: clamp(2rem, 10vw, 2.75rem);
+                line-height: 1.2;
+            }
+
+            .humana-hero-content-box .d-flex {
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            .humana-hero-content-box .btn {
+                width: 100%;
+            }
+
+            .humana-numerical-step {
+                width: 32px;
+                height: 32px;
+                font-size: 0.8rem;
+            }
+        }
+
+        /* Scroll Reveal Transitions */
+        .humana-scroll-reveal-element {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .humana-scroll-reveal-element.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg humana-main-header sticky-top">
+        <div class="container-fluid px-2 px-lg-5">
+            <a class="navbar-brand d-flex align-items-stretch" href="#">
+                <div class="humana-brand-logo-container">
+                    <img src="/static/humana_logo.png" alt="Humana Logo"
+                        style="width:100%;height:100%;object-fit:cover;display:block;">
+                </div>
+                <img src="/static/humana_wordmark.png" alt="Humana"
+                    class="humana-brand-text-image">
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#humana-navigation-menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="humana-navigation-menu">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="/activities">Activities</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/physical-health">Physical Health</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/mental-health">Mental Health</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/social-connection">Social Connection</a></li>
+
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-humana rounded-pill px-4" href="/activities">Explore -></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="humana-main-hero py-5 overflow-hidden">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-7 animate__animated animate__fadeInUp">
+                    <div class="humana-hero-content-box">
+                        <span
+                            class="badge bg-humana-light-green text-humana-green rounded-pill px-3 py-2 mb-4 shadow-sm">Healthy
+                            Habits for Every Generation</span>
+                        <h1 class="display-3 fw-bold text-humana-blue mb-4">Caring for those who <br><span
+                                class="text-humana-green">cared for us.</span></h1>
+                        <p class="lead text-muted mb-5">Empowering young caregivers and
+                            families to support the physical,
+                            mental, and social wellbeing of older loved ones through intergenerational connection.</p>
+                        <div class="d-flex flex-wrap gap-3">
+                            <a href="/activities" class="btn btn-humana btn-lg rounded-pill px-5 shadow-lg">Explore
+                                Activities</a>
+                            <a href="#humana-section-wellness-pillars" class="btn btn-outline-secondary btn-lg rounded-pill px-5">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Why Intergenerational Care Matters -->
+    <section id="humana-section-importance" class="py-5 humana-scroll-reveal-element">
+        <div class="container py-5">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold text-humana-blue mb-4">Why Intergenerational Care Matters ?</h2>
+                    <p class="lead text-muted mb-4">Bridging the gap between generations isn't just about help, it's
+                        about mutual growth and health.</p>
+                    <div class="row g-4">
+                        <div class="col-sm-6">
+                            <div class="p-4 bg-humana-light-green rounded-4 h-100">
+                                <h4 class="fw-bold text-humana-blue">Emotional Bond</h4>
+                                <p class="small text-muted mb-0">Strengthens family ties and reduces feelings of
+                                    loneliness for both young and old.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="p-4 bg-light rounded-4 h-100">
+                                <h4 class="fw-bold text-humana-blue">Knowledge Exchange</h4>
+                                <p class="small text-muted mb-0">Sharing life lessons and modern skills creates a
+                                    vibrant learning environment.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="position-relative">
+                        <img src="/static/ba9925652925d72e38c41e5e469e86bb.jpg"
+                            alt="Family Connection" class="img-fluid rounded-5 shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Preview Section -->
+    <section id="humana-section-activities-preview" class="py-5 bg-light humana-scroll-reveal-element">
+        <div class="container py-5">
+            <div class="text-center mb-5 max-w-700 mx-auto">
+                <h2 class="display-5 fw-bold text-humana-blue">Try Simple Activities That Strengthen Connection</h2>
+                <p class="lead text-muted">Spending time together doesn’t have to be complicated. These simple
+                    activities help older adults stay active, connected, and mentally engaged while strengthening family
+                    relationships.</p>
+            </div>
+
+            <div class="row g-4 mb-5">
+                <!-- Featured Activity 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4 humana-activity-preview-box">
+                        <div class="humana-feature-icon-wrapper bg-humana-green mb-3">
+                            <i data-lucide="footprints" class="text-white"></i>
+                        </div>
+                        <h4 class="fw-bold text-humana-blue">Wellness Walk</h4>
+                        <p class="text-muted small">Take a short walk together to support mobility and heart health.</p>
+                        <div class="mt-auto pt-3 border-top">
+                            <div class="d-flex justify-content-between small text-muted">
+                                <span>Time: 20 min</span>
+                                <span class="text-success fw-bold">Easy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Featured Activity 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4 humana-activity-preview-box">
+                        <div class="humana-feature-icon-wrapper bg-humana-blue mb-3">
+                            <i data-lucide="utensils" class="text-white"></i>
+                        </div>
+                        <h4 class="fw-bold text-humana-blue">Cooking Together</h4>
+                        <p class="text-muted small">Prepare a simple family recipe to preserve culture and nutrition.
+                        </p>
+                        <div class="mt-auto pt-3 border-top">
+                            <div class="d-flex justify-content-between small text-muted">
+                                <span>Time: 45 min</span>
+                                <span class="text-warning fw-bold">Moderate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Featured Activity 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4 humana-activity-preview-box">
+                        <div class="humana-feature-icon-wrapper bg-humana-dark-green mb-3">
+                            <i data-lucide="smartphone" class="text-white"></i>
+                        </div>
+                        <h4 class="fw-bold text-humana-blue">Technology Help</h4>
+                        <p class="text-muted small">Teach them to use video calls or health apps to stay connected.</p>
+                        <div class="mt-auto pt-3 border-top">
+                            <div class="d-flex justify-content-between small text-muted">
+                                <span>Time: 15 min</span>
+                                <span class="text-success fw-bold">Easy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Featured Activity 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4 humana-activity-preview-box">
+                        <div class="humana-feature-icon-wrapper bg-humana-green mb-3">
+                            <i data-lucide="book-open" class="text-white"></i>
+                        </div>
+                        <h4 class="fw-bold text-humana-blue">Memory Story Sharing</h4>
+                        <p class="text-muted small">Look through old photobooks and share stories of past experiences.
+                        </p>
+                        <div class="mt-auto pt-3 border-top">
+                            <div class="d-flex justify-content-between small text-muted">
+                                <span>Time: 20 min</span>
+                                <span class="text-success fw-bold">Easy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="/activities" class="btn btn-humana btn-lg rounded-pill px-5 shadow-sm">Explore All Activities
+                    →</a>
+            </div>
+        </div>
+    </section>
+<section id="humana-section-wellness-pillars" class="py-5 bg-light humana-scroll-reveal-element">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-humana-blue">Explore Other Wellness Pages</h2>
+                <p class="lead text-muted">Designed for teens, families, and multi-generational households caring for older loved ones.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
+                        <h3 class="h4 fw-bold text-humana-blue">Physical Health</h3>
+                        <p class="text-muted">Movement, fall prevention, nutrition, and weekly routines that protect safety and independence.</p>
+                        <a href="/physical-health" class="btn btn-outline-secondary rounded-pill mt-auto">Open Physical Page</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
+                        <h3 class="h4 fw-bold text-humana-blue">Mental Health</h3>
+                        <p class="text-muted">Empathy-based communication, stress support, mood check-ins, and healthy daily rhythm.</p>
+                        <a href="/mental-health" class="btn btn-outline-secondary rounded-pill mt-auto">Open Mental Page</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
+                        <h3 class="h4 fw-bold text-humana-blue">Social Connection</h3>
+                        <p class="text-muted">Simple shared activities, tech support, and community participation to reduce isolation.</p>
+                        <a href="/social-connection" class="btn btn-outline-secondary rounded-pill mt-auto">Open Social Page</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Tips Section -->
+    <section id="humana-section-wellness-tips" class="py-5 humana-scroll-reveal-element">
+        <div class="container py-5">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <img src="/static/A%20care%20home,%20also%20called%20a%20residential%20care%20home%E2%80%A6.jpg"
+                        alt="Caregiver" class="img-fluid rounded-5 shadow-lg humana-wellness-hero-image">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold text-humana-blue mb-5">Practical Tips for Caregivers</h2>
+                    <div class="d-flex gap-4 mb-4">
+                        <div class="humana-numerical-step">1</div>
+                        <div>
+                            <h4 class="fw-bold text-dark">Empathy-Based Communication</h4>
+                            <p class="text-muted">Listen more than you speak. Use a calm, respectful tone and maintain
+                                eye level when talking.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-4 mb-4">
+                        <div class="humana-numerical-step">2</div>
+                        <div>
+                            <h4 class="fw-bold text-dark">Monitor Physical Safety</h4>
+                            <p class="text-muted">Check for trip hazards at home. Ensure they have comfortable, non-slip
+                                footwear and adequate lighting.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-4">
+                        <div class="humana-numerical-step">3</div>
+                        <div>
+                            <h4 class="fw-bold text-dark">Social Engagement</h4>
+                            <p class="text-muted">Encourage participation in community centers. Social health is just as
+                                important as physical health.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light pt-5 pb-4 mt-5 border-top">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="humana-brand-logo-container me-2">
+                            <i data-lucide="heart" class="text-white"></i>
+                        </div>
+                        <span class="fw-bold h4 mb-0 text-humana-blue">Humana</span>
+                    </div>
+                    <p class="text-muted max-w-400">A digital wellness campaign dedicated to supporting
+                        intergenerational health and connection, inspired by Humana's Human Care identity.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="fw-bold mb-4">Quick Links</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-2"><a href="#humana-section-importance" class="text-decoration-none text-muted hover-green">About
+                                Campaign</a></li>
+                        <li class="mb-2"><a href="/activities"
+                                class="text-decoration-none text-muted hover-green">Activities</a></li>
+                        <li class="mb-2"><a href="/physical-health" class="text-decoration-none text-muted hover-green">Physical Health</a></li>
+                        <li class="mb-2"><a href="/mental-health" class="text-decoration-none text-muted hover-green">Mental Health</a></li>
+                        <li class="mb-2"><a href="/social-connection" class="text-decoration-none text-muted hover-green">Social Connection</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="fw-bold mb-4">Contact</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-2">support@humana.com</li>
+                        <li class="mb-2">1-123-456-7890</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-4 border-top text-center text-muted small">
+                <p>&copy; JDBilds</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+
+        // Scroll Reveal Implementation
+        const observerOptions = {
+            threshold: 0.15
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.humana-scroll-reveal-element').forEach(el => observer.observe(el));
+    </script>
+
+    <!-- ===== Floating AI Chat Widget ===== -->
+    <style>
+        #humana-ai-chat-trigger {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            width: 62px;
+            height: 62px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #78BE20 0%, #5C9A1B 100%);
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 8px 30px rgba(92, 154, 27, 0.45);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+        }
+
+        #humana-ai-chat-trigger:hover {
+            transform: scale(1.1);
+            box-shadow: 0 12px 40px rgba(92, 154, 27, 0.55);
+        }
+
+        #humana-ai-chat-trigger::before {
+            content: '';
+            position: absolute;
+            inset: -6px;
+            border-radius: 50%;
+            background: rgba(120, 190, 32, 0.2);
+            animation: pulse-ring 2.5s ease-out infinite;
+        }
+
+        @keyframes pulse-ring {
+            0% {
+                transform: scale(0.9);
+                opacity: 0.8;
+            }
+
+            70% {
+                transform: scale(1.35);
+                opacity: 0;
+            }
+
+            100% {
+                transform: scale(1.35);
+                opacity: 0;
+            }
+        }
+
+        #humana-ai-chat-notification {
+            position: absolute;
+            top: -2px;
+            right: -2px;
+            width: 18px;
+            height: 18px;
+            background: #e53e3e;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            font-size: 10px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+        }
+
+        .chat-fab-svg {
+            width: 26px;
+            height: 26px;
+            color: #fff;
+            transition: all 0.2s ease;
+        }
+
+        .icon-close-fab {
+            display: none;
+        }
+
+        #humana-ai-chat-container {
+            position: fixed;
+            bottom: 108px;
+            right: 28px;
+            width: 375px;
+            max-height: 590px;
+            background: #fff;
+            border-radius: 22px;
+            box-shadow: 0 24px 64px rgba(0, 0, 0, 0.18), 0 4px 20px rgba(0, 0, 0, 0.09);
+            display: flex;
+            flex-direction: column;
+            z-index: 9998;
+            overflow: hidden;
+            transform: scale(0.85) translateY(40px);
+            opacity: 0;
+            pointer-events: none;
+            transform-origin: bottom right;
+            transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.25s ease;
+        }
+
+        #humana-ai-chat-container.open {
+            transform: scale(1) translateY(0);
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .chat-header {
+            background: linear-gradient(135deg, #5C9A1B 0%, #78BE20 100%);
+            padding: 16px 18px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-shrink: 0;
+        }
+
+        .chat-avatar {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.18);
+            border: 2px solid rgba(255, 255, 255, 0.35);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.35rem;
+            flex-shrink: 0;
+        }
+
+        .chat-header-info {
+            flex: 1;
+        }
+
+        .chat-header-name {
+            color: #fff;
+            font-weight: 700;
+            font-size: 0.95rem;
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        .chat-header-status {
+            color: rgba(255, 255, 255, 0.82);
+            font-size: 0.76rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-top: 2px;
+        }
+
+        .humana-chat-online-presence {
+            width: 7px;
+            height: 7px;
+            background: #c8f57a;
+            border-radius: 50%;
+            display: inline-block;
+            animation: blink 1.8s ease-in-out infinite;
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 1
+            }
+
+            50% {
+                opacity: 0.3
+            }
+        }
+
+        #humana-ai-chat-close-btn {
+            background: rgba(255, 255, 255, 0.15);
+            border: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            color: #fff;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.2s;
+        }
+
+        #humana-ai-chat-close-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        #humana-ai-chat-message-list {
+            flex: 1;
+            overflow-y: auto;
+            padding: 16px 14px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            background: #f6f9f2;
+            scroll-behavior: smooth;
+        }
+
+        #humana-ai-chat-message-list::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        #humana-ai-chat-message-list::-webkit-scrollbar-thumb {
+            background: #c5e48a;
+            border-radius: 4px;
+        }
+
+        .humana-chat-message-row {
+            display: flex;
+            align-items: flex-end;
+            gap: 8px;
+            animation: msgIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        @keyframes msgIn {
+            from {
+                transform: translateY(14px);
+                opacity: 0
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1
+            }
+        }
+
+        .humana-chat-message-row.user {
+            flex-direction: row-reverse;
+        }
+
+        .humana-chat-avatar-icon {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #78BE20, #5C9A1B);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+            flex-shrink: 0;
+        }
+
+        .humana-chat-message-bubble {
+            max-width: 78%;
+            padding: 10px 14px;
+            border-radius: 18px;
+            font-size: 0.875rem;
+            line-height: 1.55;
+            color: #333;
+        }
+
+        .humana-chat-message-row.bot .humana-chat-message-bubble {
+            background: #fff;
+            border-bottom-left-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+        }
+
+        .humana-chat-message-row.user .humana-chat-message-bubble {
+            background: linear-gradient(135deg, #5C9A1B, #78BE20);
+            color: #fff;
+            border-bottom-right-radius: 4px;
+        }
+
+        .humana-chat-timestamp {
+            font-size: 0.67rem;
+            color: #bbb;
+            margin-top: 4px;
+            display: block;
+        }
+
+        .humana-chat-message-row.user .humana-chat-timestamp {
+            text-align: right;
+        }
+
+        .humana-ai-chat-typing-indicator {
+            display: flex;
+            gap: 4px;
+            padding: 12px 16px;
+            background: #fff;
+            border-radius: 18px;
+            border-bottom-left-radius: 4px;
+            width: fit-content;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+        }
+
+        .typing-dot {
+            width: 6px;
+            height: 6px;
+            background: #c5e48a;
+            border-radius: 50%;
+            animation: typing 1.4s infinite ease-in-out;
+        }
+
+        .typing-dot:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .typing-dot:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes typing {
+
+            0%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-6px);
+            }
+        }
+
+        #humana-ai-chat-quick-actions {
+            padding: 10px 14px;
+            background: #f6f9f2;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            border-top: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .humana-chat-quick-reply-btn {
+            background: #fff;
+            border: 1px solid #c5e48a;
+            color: #5C9A1B;
+            padding: 6px 12px;
+            border-radius: 16px;
+            font-size: 0.78rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-weight: 500;
+        }
+
+        .humana-chat-quick-reply-btn:hover {
+            background: #f0f7e6;
+            transform: translateY(-1px);
+        }
+
+        .humana-chat-footer-controls {
+            padding: 14px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: #fff;
+            border-top: 1px solid #eee;
+        }
+
+        #humana-ai-chat-user-input {
+            flex: 1;
+            border: 1px solid #eee;
+            background: #f8f8f8;
+            padding: 10px 16px;
+            border-radius: 24px;
+            font-size: 0.9rem;
+            outline: none;
+            transition: border 0.2s;
+        }
+
+        #humana-ai-chat-user-input:focus {
+            border-color: #78BE20;
+            background: #fff;
+        }
+
+        #humana-ai-chat-send-btn {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: var(--humana-green);
+            border: none;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 14px rgba(92, 154, 27, 0.35);
+            transition: transform 0.2s, box-shadow 0.2s;
+            flex-shrink: 0;
+        }
+
+        #humana-ai-chat-send-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 18px rgba(92, 154, 27, 0.5);
+        }
+
+        @media(max-width:480px) {
+            #humana-ai-chat-container {
+                width: calc(100vw - 28px);
+                right: 14px;
+            }
+
+            #humana-ai-chat-trigger {
+                right: 14px;
+                bottom: 18px;
+            }
+        }
+    </style>
+
+    <!-- Launcher Button -->
+    <button id="humana-ai-chat-trigger" aria-label="Open AI Chat">
+        <span id="humana-ai-chat-notification">1</span>
+        <svg class="chat-fab-svg icon-chat-fab" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="M8 10h.01M12 10h.01M16 10h.01M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2v10z" />
+        </svg>
+        <svg class="chat-fab-svg icon-close-fab" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+    </button>
+
+    <!-- Chat Window -->
+    <div id="humana-ai-chat-container" role="dialog" aria-label="AI Care Assistant">
+        <div class="chat-header">
+            <div class="chat-avatar">🤖</div>
+            <div class="chat-header-info">
+                <p class="chat-header-name">Humana Care Assistant</p>
+                <div class="chat-header-status"><span class="humana-chat-online-presence"></span> Online &middot;
+                    AI-Powered</div>
+            </div>
+            <button id="humana-ai-chat-close-btn" aria-label="Close">
+                <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+
+        <div id="humana-ai-chat-message-list">
+            <div class="humana-chat-message-row bot">
+                <div class="humana-chat-avatar-icon">🤖</div>
+                <div>
+                    <div class="humana-chat-message-bubble">👋 Hi! I'm your <strong>Humana Care Assistant</strong>. Ask
+                        me about
+                        caregiving tips, activity ideas, wellness resources, or home safety.</div>
+                    <div class="humana-chat-timestamp">Just now</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="humana-ai-chat-quick-actions">
+            <button class="humana-chat-quick-reply-btn" onclick="chatSendQuick(this)">🏃 Activity ideas</button>
+            <button class="humana-chat-quick-reply-btn" onclick="chatSendQuick(this)">💊 Medication tips</button>
+            <button class="humana-chat-quick-reply-btn" onclick="chatSendQuick(this)">🧠 Mental wellness</button>
+            <button class="humana-chat-quick-reply-btn" onclick="chatSendQuick(this)">📞 Get support</button>
+        </div>
+
+        <div class="humana-chat-footer-controls">
+            <input id="humana-ai-chat-user-input" type="text" placeholder="Ask about caregiving..." maxlength="300"
+                autocomplete="off">
+            <button id="humana-ai-chat-send-btn" aria-label="Send">
+                <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        (function () {
+            const launcher = document.getElementById('humana-ai-chat-trigger');
+            const chatWin = document.getElementById('humana-ai-chat-container');
+            const closeBtn = document.getElementById('humana-ai-chat-close-btn');
+            const msgs = document.getElementById('humana-ai-chat-message-list');
+            const input = document.getElementById('humana-ai-chat-user-input');
+            const sendBtn = document.getElementById('humana-ai-chat-send-btn');
+            const badge = document.getElementById('humana-ai-chat-notification');
+            const iconChat = launcher.querySelector('.icon-chat-fab');
+            const iconX = launcher.querySelector('.icon-close-fab');
+            let open = false;
+
+            async function getBackendResponse(text) {
+                try {
+                    const response = await fetch('/ask', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ message: text })
+                    });
+                    const data = await response.json();
+                    return data.response || "I'm sorry, I'm having trouble thinking right now.";
+                } catch (err) {
+                    console.error("Chat error:", err);
+                    return "Connecting to server... Please try again in 1 moment.";
+                }
+            }
+
+            function fmt(t) { return t.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\n/g, '<br>'); }
+            function nowStr() { return new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }); }
+            function esc(t) { return t.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+
+            function addMsg(text, role) {
+                const row = document.createElement('div');
+                row.className = `humana-chat-message-row ${role}`;
+                const bot = role === 'bot';
+                row.innerHTML = `${bot ? '<div class="humana-chat-avatar-icon">🤖</div>' : ''}
+                <div>
+                    <div class="humana-chat-message-bubble">${bot ? fmt(text) : esc(text)}</div>
+                    <div class="humana-chat-timestamp">${nowStr()}</div>
+                </div>`;
+                msgs.appendChild(row);
+                msgs.scrollTop = msgs.scrollHeight;
+            }
+
+            function showTyping() {
+                const row = document.createElement('div');
+                row.className = 'humana-chat-message-row bot';
+                row.id = 'humana-ai-chat-typing-indicator-row';
+                row.innerHTML = `<div class="humana-chat-avatar-icon">🤖</div>
+                <div class="humana-ai-chat-typing-indicator">
+                    <div class="typing-dot"></div>
+                    <div class="typing-dot"></div>
+                    <div class="typing-dot"></div>
+                </div>`;
+                msgs.appendChild(row); msgs.scrollTop = msgs.scrollHeight;
+            }
+            function hideTyping() { const el = document.getElementById('humana-ai-chat-typing-indicator-row'); if (el) el.remove(); }
+
+            async function handleSend() {
+                const t = input.value.trim(); if (!t) return;
+                input.value = '';
+                addMsg(t, 'user'); showTyping();
+
+                const reply = await getBackendResponse(t);
+                hideTyping();
+                addMsg(reply, 'bot');
+            }
+
+            async function chatSendQuick(btn) {
+                const t = btn.textContent.replace(/^[\W]+/, '').trim();
+                btn.remove();
+                addMsg(t, 'user'); showTyping();
+
+                const reply = await getBackendResponse(t);
+                hideTyping();
+                addMsg(reply, 'bot');
+            }
+            window.chatSendQuick = chatSendQuick;
+
+            function toggle() {
+                open = !open;
+                chatWin.classList.toggle('open', open);
+                iconChat.style.display = open ? 'none' : 'block';
+                iconX.style.display = open ? 'block' : 'none';
+                if (open) { badge.style.display = 'none'; setTimeout(() => input.focus(), 350); }
+            }
+
+            launcher.addEventListener('click', toggle);
+            closeBtn.addEventListener('click', () => { open = true; toggle(); });
+            sendBtn.addEventListener('click', handleSend);
+            input.addEventListener('keydown', e => { if (e.key === 'Enter') handleSend(); });
+        })();
+    </script>
+
+    <link rel="stylesheet" href="/static/eye-nav.css">
+    <script src="/static/eye-nav.js" defer></script>
+</body>
+
+</html>
