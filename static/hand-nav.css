@@ -1,0 +1,167 @@
+/* HandNav — hand gesture navigation widget styles */
+
+.handnav-hidden { display: none !important; }
+
+.handnav-hand { font-style: normal; }
+
+/* Floating launch button */
+.handnav-launch {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  z-index: 99990;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 999px;
+  background: #6B4BA3;
+  color: #fff;
+  font: 600 15px/1 'Inter', system-ui, sans-serif;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(107, 75, 163, 0.35);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.handnav-launch:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(107, 75, 163, 0.45);
+}
+
+/* Intro overlay */
+.handnav-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 99998;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(30, 15, 40, 0.65);
+  backdrop-filter: blur(4px);
+}
+.handnav-card {
+  max-width: 460px;
+  margin: 16px;
+  padding: 28px 30px;
+  border-radius: 18px;
+  background: #fff;
+  color: #2b2b2b;
+  font-family: 'Inter', system-ui, sans-serif;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+}
+.handnav-card h2 {
+  margin: 0 0 10px;
+  font-size: 1.4rem;
+  color: #6B4BA3;
+}
+.handnav-card p { margin: 0 0 12px; font-size: 0.95rem; }
+.handnav-card ul { margin: 0 0 12px; padding-left: 20px; font-size: 0.95rem; }
+.handnav-card li { margin-bottom: 6px; }
+.handnav-perm { color: #6B4BA3; }
+.handnav-actions { display: flex; gap: 10px; margin-top: 18px; }
+.handnav-btn {
+  flex: 1;
+  padding: 11px 14px;
+  border: 1px solid #e8dff5;
+  border-radius: 10px;
+  background: #fff;
+  font: 600 14px 'Inter', system-ui, sans-serif;
+  cursor: pointer;
+}
+.handnav-btn-primary {
+  background: #6B4BA3;
+  border-color: #6B4BA3;
+  color: #fff;
+}
+
+/* HUD */
+.handnav-hud {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  z-index: 99995;
+  width: 190px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #1a0f25;
+  font-family: 'Inter', system-ui, sans-serif;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.4);
+}
+.handnav-videowrap { position: relative; height: 130px; }
+.handnav-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scaleX(-1);
+}
+.handnav-arrow {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.25);
+  font-size: 20px;
+  line-height: 1;
+  transition: color 0.1s ease, text-shadow 0.1s ease;
+  pointer-events: none;
+}
+.handnav-arrow-up { top: 4px; left: 50%; transform: translateX(-50%); }
+.handnav-arrow-down { bottom: 4px; left: 50%; transform: translateX(-50%); }
+.handnav-arrow-left { left: 6px; top: 50%; transform: translateY(-50%); }
+.handnav-arrow-right { right: 6px; top: 50%; transform: translateY(-50%); }
+.handnav-arrow-active {
+  color: #a78bfa;
+  text-shadow: 0 0 10px rgba(167, 139, 250, 0.9);
+}
+.handnav-ring {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 56px;
+  height: 56px;
+  transform: rotate(-90deg);
+  opacity: 0;
+  transition: opacity 0.15s ease;
+  pointer-events: none;
+}
+.handnav-ring circle {
+  fill: none;
+  stroke: #a78bfa;
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+.handnav-status {
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #d4c5f0;
+}
+.handnav-status-ok { color: #a78bfa; }
+.handnav-status-warn { color: #fcd34d; }
+.handnav-status-err { color: #f87171; }
+.handnav-stop {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 24px;
+  height: 24px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  font-size: 15px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+/* Action banner */
+.handnav-banner {
+  position: fixed;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99999;
+  padding: 10px 22px;
+  border-radius: 999px;
+  background: #6B4BA3;
+  color: #fff;
+  font: 600 14px 'Inter', system-ui, sans-serif;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
